@@ -196,13 +196,6 @@ img {
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.eot") format("eot");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'OpenSans-Regular';
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.eot") format("eot");
   font-weight: normal;
@@ -210,8 +203,8 @@ img {
 }
 
 @font-face {
-  font-family: 'pala-Normal';
-  src: url('../fonts/pala/pala-Normal.ttf') format('truetype'), url("../fonts/pala/pala-Normal.woff") format("woff"), url("../fonts/pala/pala-Normal.eot") format("eot");
+  font-family: 'pala';
+  src: url('../fonts/pala/pala.ttf') format('truetype'), url("../fonts/pala/pala.woff") format("woff"), url("../fonts/pala/pala.eot") format("eot");
   font-weight: normal;
   font-style: normal;
 }
@@ -321,109 +314,14 @@ input:focus {
   z-index: -1;
 }
 
-.page__title {
-  font-family: "pala-Normal";
-  font-size: 61px;
-}
-
-.page__title_gray {
+.page__title-h1,
+.page__title-h2 {
+  font-family: "pala";
   color: #4c4c4c;
 }
 
-.banner.animated .page__title-h1 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.banner.animated .page__text {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: lightSpeedInRight;
-  animation-name: lightSpeedInRight;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
-
-@-webkit-keyframes lightSpeedInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes lightSpeedInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.page__title-h1 {
+  font-size: 61px;
 }
 
 @media screen and (max-width: 920px) {
