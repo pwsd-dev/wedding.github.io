@@ -1,0 +1,26 @@
+.banner{
+    .page__title-h1{
+      
+    }
+    .page__text{
+        
+    };
+    &.animated{
+        .page__title-h1 {
+            .animated({
+                .fadeInRight();
+                // .repeat(2);
+            });
+        }
+        
+        .page__text{
+            .animated({
+                .lightSpeedInRight();
+                //.repeat(3);
+            }, 5s);
+        }
+        .page__text{
+            //.delay(.5s);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../fonts/fonts.less';
+.reset();
+
+.wrapper{
+    .wrapper();
+}
+
+.scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
+
+@font-face {
+  .font(@font; @fontBold);
+}
+@font-face {
+  .font(@font; @fontRegular);
+}
+@font-face {
+  .font(@pala; "@{pala}-Normal");
+}
+@font-face {
+  .font(@pala; "@{pala}-Bold");
+}
+body {
+  font-family: @fontRegular;
+}
+a, button{
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+}
+input{
+  cursor: text;
+  &:focus{
+      outline: none;
+  }
+}
