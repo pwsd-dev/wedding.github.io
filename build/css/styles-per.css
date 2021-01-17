@@ -203,6 +203,13 @@ img {
 }
 
 @font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'pala';
   src: url('../fonts/pala/pala.ttf') format('truetype'), url("../fonts/pala/pala.woff") format("woff"), url("../fonts/pala/pala.eot") format("eot");
   font-weight: normal;
@@ -322,6 +329,11 @@ input:focus {
 
 .page__title-h1 {
   font-size: 61px;
+}
+
+.page__text {
+  font-family: "Montserrat-Regular";
+  font-size: 21px;
 }
 
 @media screen and (max-width: 920px) {
