@@ -178,12 +178,12 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -331,9 +331,52 @@ input:focus {
   font-size: 61px;
 }
 
+.page__title-h2 {
+  font-size: 50px;
+}
+
+.page__subtitle_smalll {
+  font-family: "pala";
+  font-size: 20px;
+  color: #575757;
+}
+
 .page__text {
   font-family: "Montserrat-Regular";
   font-size: 21px;
+  color: #4c4c4c;
+}
+
+.page__text_small {
+  font-family: "Montserrat-Regular";
+  font-size: 20px;
+  color: #575757;
+}
+
+.page__img {
+  display: block;
+}
+
+.page__btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 5px;
+  height: 68px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-family: "Montserrat-Regular";
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 @media screen and (max-width: 920px) {
