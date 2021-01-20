@@ -1,3 +1,49 @@
 .banner {
-    
+    background-color: @color_light-pink;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    &-block {
+        .row-flex();
+        flex-wrap: nowrap;
+        &__description {
+           //.size(6);
+            .page__title-h1 {
+                
+                width: 30px;
+                padding-bottom: 30px;
+            }
+
+            .page__text {
+                .size(10);
+                padding-bottom: 30px;
+            }
+
+            .page__btn {
+                .size(4.5);
+            }
+
+            .page__text_very-small {
+                .size(5);
+                position: relative;
+                top: -48px;
+                left: 255px;
+                
+                
+            }
+
+            .page__img {
+                position: relative;
+                top: -44px;
+                left: 196px;
+            }
+        }
+
+        &__img {
+            //.size(1);
+            .page__img {
+               position: relative;
+               left: 100px;
+            }
+        }
+    }
 }

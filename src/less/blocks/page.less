@@ -32,6 +32,9 @@
             font-family: "@{Montserrat}-Regular";
             font-size: 20px;
             color: @color_light-gray;
+            &_center {
+                text-align: center;
+            }
             &-italic {
                 font-family: "@{pala}-Italic";
                 font-size: 20px;
@@ -53,8 +56,32 @@
 
     }
 
+    &__link {
+
+            text-decoration: none;
+            font-family: "@{Montserrat}-Regular";
+            font-size: 15px;
+            color: @color_gray-2;
+            
+            
+            &-step-work {
+                text-decoration: none;
+                font-family: "@{Montserrat}-Regular";
+                font-size: 15px;
+                color: @color_pink;
+                margin-top: 26px;
+            }
+    }
+
     &__img {
         display: block;
+        &_small-rose {
+
+        }
+
+        &_step-work {
+
+        }
     }
 
     &__btn {
@@ -63,17 +90,71 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        
 
-        border-radius: 5px;
-        height: 68px;
-        font-size: 20px;
+        border-radius: 25px;
+        height: 45px;
+        font-size: 14px;
         letter-spacing: 1px;
         line-height: 30px;
         font-family: "@{Montserrat}-Regular";
         text-transform: uppercase;
-        border: none;
+        border: 2px solid @color_pink;
         color: @color_white;
-        background-color: transparent;
-        border: 1px solid #fff;
+        background-color: @color_pink;
+        padding-left: 45px;
+        padding-right: 45px;
+        flex-wrap: nowrap;
+        &:hover {
+            transition: all ease-out 0.5s;
+            background-color: @color_pink-dark;
+            color: @color_white;
+            
+            font-size: 10px;
+            &::after {
+                content: '';
+                .sprite(@icon-strelka);
+                margin-left: 10px;
+                color: @color_white;
+                flex-wrap: nowrap;
+            }
+        }
+        &-call {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+
+            border-radius: 25px;
+            height: 45px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            font-family: "@{Montserrat}-Regular";
+            text-transform: uppercase;
+            border: 2px solid @color_pink;
+            color: @color_pink;
+            background-color: transparent;
+            padding-left: 25px;
+            padding-right: 25px;
+            &::before {
+                content: '';
+                .sprite(@icon-nav-call);
+                margin-right: 10px;
+            }
+            &:hover {
+                transition: all ease-out 0.5s;
+                background-color: @color_pink;
+                color: @color_white;
+                &::before {
+                    content: '';
+                    .sprite(@icon-nav-call-white);
+                    margin-right: 10px;
+                    color: @color_white;
+                }
+            }
+            
+        }
     }
 }

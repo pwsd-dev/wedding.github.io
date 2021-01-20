@@ -1,3 +1,38 @@
 .price {
-    
+    background-image: url(../assets/img/img-bg-price.png);
+    padding-top: 90px;
+    padding-bottom: 80px;
+    &-block {
+        .row-flex();
+        &-img {
+            
+            &__img {
+                .page__img {
+                    .size(12);
+                }
+            }
+        }
+
+        &-description {
+            .size(5);
+            position: relative;
+            top: 120px;
+            left: 20px;
+            .page__title-h2 {
+                padding-bottom: 30px;
+            }
+
+            .page__text_small {
+                padding-bottom: 30px;
+                &_padding-left {
+                    padding-left: 35px;
+                }
+            }
+
+            .page__btn {
+                .size(6);
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

@@ -1,3 +1,45 @@
-.header{
-    
+.header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    &-block {
+        .row-flex();
+
+        &__logo {
+            .size(2);
+        }
+        
+        &-links {
+            .size(6);
+            padding-top: 35px;
+            &__get-opros , &__portfolio , &__step-work , &__feedback , &__about {
+                padding-right: 30px;
+            }
+        }
+
+        &__soc {
+            .row-flex();
+            padding-top: 27px;
+            .shift-left(-.5);
+            .size(2);
+            &-whatsapp {
+                margin-right: 15px;
+                .sprite(@icon-nav-whatsapp);
+
+            }
+            &-vk {
+                margin-right: 15px;
+                .sprite(@icon-nav-vk);
+            }
+            &-instagram {
+                margin-right: 15px;
+                .sprite(@icon-nav-instagram);
+            }
+        }
+
+        &__call {
+            .shift-left(.5);
+            padding-top: 18px;
+        }
+
+    }
 }

@@ -1,0 +1,116 @@
+.step-work {
+    padding-top: 100px;
+    &-block {
+        &__img {
+            .page__img {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+        .page__title-h2 {
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page__img {
+            margin: 0 auto;
+        }
+
+        &-items {
+            .row-flex();
+            &-item {
+                .size(4);
+                .col();
+                &__background {
+                    background-color: @color_pink;
+                    border-radius: 20px;
+                    //height: 352px;
+                    .page__text_small {
+                        color: @color_white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        line-height: 25px;
+                        padding-top: 10px;
+                        
+                    }
+
+                    .page__text_very-small {
+                        
+                        color: @color_white;
+                        .size(10);
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        font-size: 16px;
+                        padding-bottom: 100px;
+
+
+                    }
+
+                    .page__img_small-rose {
+                        position: relative;
+                        top: 10px;
+                        left: 30px;
+                    }
+
+                    &_contract, &_concept, &_stage, &_team, &_logistic, &_event, &_work-project, &_post-production  {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-image: url(../assets/img/img-bg-contract.png);
+                        background-repeat: no-repeat;
+                        border-radius: 25px;
+                        height: 372px;
+                        width: 374px;
+                        align-items: center;
+                        padding-top: 70px;
+                        
+                        
+                        .page__text_small {
+                            text-transform: uppercase;
+                        }
+
+                        .page__link-step-work {
+
+                        }
+                    }
+
+                    &_concept {
+                        background-image: url(../assets/img/img-bg-concept.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    &_stage {
+                        background-image: url(../assets/img/img-bg-stage.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    &_team {
+                        background-image: url(../assets/img/img-bg-team.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    &_logistic {
+                        background-image: url(../assets/img/img-bg-logistic.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    &_event {
+                        background-image: url(../assets/img/img-bg-event.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    &_work-project {
+                        background-image: url(../assets/img/img-bg-work-project.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    &_post-production {
+                        background-image: url(../assets/img/img-bg-post-production.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
