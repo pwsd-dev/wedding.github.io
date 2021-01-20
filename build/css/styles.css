@@ -217,6 +217,13 @@ img {
 }
 
 @font-face {
+  font-family: 'pala-Italic';
+  src: url('../fonts/pala/pala-Italic.ttf') format('truetype'), url("../fonts/pala/pala-Italic.woff") format("woff"), url("../fonts/pala/pala-Italic.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'pala-Bold';
   src: url('../fonts/pala/pala-Bold.ttf') format('truetype'), url("../fonts/pala/pala-Bold.woff") format("woff"), url("../fonts/pala/pala-Bold.eot") format("eot");
   font-weight: normal;
@@ -347,9 +354,29 @@ input:focus {
   color: #4c4c4c;
 }
 
+.page__text-pink {
+  color: #eb5173;
+}
+
 .page__text_small {
   font-family: "Montserrat-Regular";
   font-size: 20px;
+  color: #575757;
+}
+
+.page__text_small-italic {
+  font-family: "pala-Italic";
+  font-size: 20px;
+  color: #575757;
+}
+
+.page__text_small-pink {
+  color: #eb5173;
+}
+
+.page__text_very-small {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
   color: #575757;
 }
 
