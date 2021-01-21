@@ -924,6 +924,7 @@ input:focus {
   display: inline-block;
   position: absolute;
   background-image: url(../assets/img/img-professional-flower-before.png);
+  background-repeat: no-repeat;
   width: 335px;
   height: 290px;
   top: -235px;
@@ -936,6 +937,7 @@ input:focus {
   display: inline-block;
   position: absolute;
   background-image: url(../assets/img/img-professional-flower-after.png);
+  background-repeat: no-repeat;
   width: 335px;
   height: 290px;
   top: 271px;
@@ -980,6 +982,12 @@ input:focus {
 
 .professional-block-description-right .page__text_very-small {
   margin-bottom: 26px;
+}
+
+.ten-professionals {
+  background-image: url(../assets/img/img-bg-ten-professional.png);
+  background-repeat: no-repeat;
+  z-index: 30;
 }
 
 .ten-professionals-block__img .page__img {
@@ -1035,6 +1043,91 @@ input:focus {
   margin: 0 auto;
   margin-top: 70px;
   margin-bottom: 70px;
+}
+
+.city {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.city-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  flex-wrap: nowrap;
+}
+
+.city-block-description .page__title-h2 {
+  margin-bottom: 20px;
+}
+
+.city-block-description .page__text_very-small {
+  width: 46.9%;
+  margin-bottom: 20px;
+}
+
+.city-block-description .page__text_small {
+  width: 63.56666667%;
+}
+
+.city-block-img .page__img {
+  width: 213.56666667%;
+  margin-left: -81.78333333%;
+  position: relative;
+  top: -55px;
+}
+
+.basis {
+  background-image: url(../assets/img/img-bg-basis.png);
+  background-repeat: no-repeat;
+}
+
+.basis-block {
+  background-color: #fff;
+  position: relative;
+  top: -170px;
+  width: 80.23333333%;
+  margin-left: 9.88333333%;
+}
+
+.basis-block-description {
+  width: 55.23333333%;
+  margin-left: 18.21666667%;
+  padding-top: 65px;
+}
+
+.basis-block-description .page__text_small-pink {
+  margin-bottom: 12px;
+}
+
+.basis-block-description .page__text_very-small {
+  margin-bottom: 35px;
+}
+
+.basis-block-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+}
+
+.basis-block-items-item {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  width: 30.23333333%;
+  margin-left: 18.21666667%;
+  margin-right: -14.28333333%;
+  margin-bottom: 50px;
+}
+
+.basis-block-items-item__img .page__img {
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 920px) {

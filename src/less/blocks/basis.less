@@ -1,0 +1,46 @@
+.basis {
+    background-image: url(../assets/img/img-bg-basis.png);
+    background-repeat: no-repeat;
+    &-block {
+        background-color: @color_white;
+        position: relative;
+        top: -170px;
+        .size(10);
+        .shift-left(1);
+        &-description {
+            .size(7);
+            .shift-left(2);
+            padding-top: 65px;
+            //padding-left: 65px;
+            //padding-right: 65px;
+            
+            .page__text_small-pink {
+                margin-bottom: 12px;
+            }
+
+            .page__text_very-small {
+                margin-bottom: 35px;
+            }
+        }
+
+        &-items {
+            .row-flex();
+            //flex-wrap: nowrap;
+
+            &-item {
+                //.shift-left(3);
+                .row-flex();
+                .size(4);
+                .shift-left(2);
+                .shift-right(-1.9);
+                margin-bottom: 50px;
+                
+                &__img {
+                    .page__img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
