@@ -438,7 +438,7 @@ input:focus {
 .page__btn:hover::after {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: -86px -28px;
+  background-position: 0px -84px;
   width: 13px;
   height: 13px;
   margin-left: 10px;
@@ -472,7 +472,7 @@ input:focus {
 .page__btn-call::before {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: -86px 0px;
+  background-position: -42px -42px;
   width: 18px;
   height: 18px;
   margin-right: 10px;
@@ -488,7 +488,7 @@ input:focus {
 .page__btn-call:hover::before {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: -42px -42px;
+  background-position: -86px -44px;
   width: 19px;
   height: 18px;
   margin-right: 10px;
@@ -759,6 +759,7 @@ input:focus {
 }
 
 .step-work-block .page__title-h2 {
+  width: 46.9%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
@@ -882,6 +883,158 @@ input:focus {
 .step-work-block-items-item__background_post-production {
   background-image: url(../assets/img/img-bg-post-production.png);
   background-repeat: no-repeat;
+}
+
+.slider-feedback {
+  background-image: url(../assets/img/img-bg-slider-feedback.png);
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 382px;
+  margin-top: 160px;
+}
+
+.slider-feedback-block .page__img_rose {
+  position: relative;
+  top: -110px;
+}
+
+.professional-block {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+}
+
+.professional-block-description-profile {
+  width: 30.23333333%;
+  background-color: #fff;
+  z-index: 20;
+}
+
+.professional-block-description-profile .page__title-h2 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.professional-block-description-profile .page__title-h2::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../assets/img/img-professional-flower-before.png);
+  width: 335px;
+  height: 290px;
+  top: -235px;
+  left: 174px;
+  z-index: 10;
+}
+
+.professional-block-description-profile .page__title-h2::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url(../assets/img/img-professional-flower-after.png);
+  width: 335px;
+  height: 290px;
+  top: 271px;
+  left: -212px;
+  z-index: 10;
+}
+
+.professional-block-description-profile .page__text_small-pink {
+  margin-bottom: 15px;
+}
+
+.professional-block-img-center {
+  width: 21.9%;
+}
+
+.professional-block-img-center .page__img {
+  padding-left: 40px;
+}
+
+.professional-block-description-right {
+  width: 38.56666667%;
+  padding-left: 90px;
+  padding-top: 30px;
+}
+
+.professional-block-description-right .page__text_small-pink {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.professional-block-description-right .page__text_small-pink::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #eb5173;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+}
+
+.professional-block-description-right .page__text_very-small {
+  margin-bottom: 26px;
+}
+
+.ten-professionals-block__img .page__img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.ten-professionals-block .page__title-h2 {
+  text-align: center;
+}
+
+.ten-professionals-block-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.ten-professionals-block-items__item {
+  width: 13.56666667%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.55%;
+  margin-right: 1.55%;
+  position: relative;
+}
+
+.ten-professionals-block-items__item:hover {
+  color: #eb5173;
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+
+.ten-professionals-block-items__item:hover::after {
+  content: '';
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+  width: 110px;
+  height: 2px;
+  background-color: #eb5173;
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 0;
+}
+
+.ten-professionals-block .page__text_small-italic {
+  width: 55.23333333%;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 @media screen and (max-width: 920px) {
