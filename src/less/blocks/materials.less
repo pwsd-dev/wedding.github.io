@@ -1,0 +1,63 @@
+.materials {
+    padding-bottom: 100px;
+    overflow: hidden;
+    &-block {
+        .page__title-h2 {
+            margin: 0 auto;
+            .size(9);
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .page__img {
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 70px;
+        }
+
+        &-items {
+            .row-flex();
+            .shift-left(1);
+            position: relative;
+            left: 56px;
+            margin: 0 auto;
+            &__item {
+                //background-color: #fee2d9;
+                .size(4);
+                .col();
+                margin-top: 40px;
+                .page__text_very-small_pink {
+                    .size(12);
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    //text-align: center;
+                    position: relative;
+                    margin-left: 40px;
+                    
+                    
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        .sprite(@icon-pdf);
+                        position: absolute;
+                        left: -40px;
+                        top: -10px;
+                    }
+                }
+
+                .page__text_small {
+                    .size(10);
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                .page__text_very-small {
+                    .size(8);
+                    text-align: left;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}

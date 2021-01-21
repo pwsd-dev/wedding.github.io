@@ -1,0 +1,55 @@
+.form {
+    background-image: url(../assets/img/form-bg.png);
+    background-repeat: no-repeat;
+    padding-bottom: 87px;
+    overflow: hidden;
+    &-block {
+        padding-top: 100px;
+        
+        .row-flex();
+        flex-wrap: nowrap;
+        &-img {
+            .shift-left(1);
+            .page__img {
+                .size(17);
+            }
+        }
+
+        &-form {
+            .shift-left(2);
+            //padding-left: 40px;
+            .page__btn {
+                .size(3);
+
+            }
+
+            .page__title-h2 {
+                margin-bottom: 20px;
+            }
+
+            .page__text_very-small {
+                margin-bottom: 30px;
+            }
+
+            form { 
+                display: flex;
+                flex-direction: column;
+                .size(7.5);
+                input {
+                    margin-bottom: 20px;
+                    border: none;
+                    border: 1px solid #b2b2b2;
+                    height: 40px;
+                    border-radius: 25px;
+                }
+
+                .place {
+                    font-family: "@{Montserrat}-Regular";
+                    font-size: 14px;
+                    color: @color_light-gray;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
