@@ -4,13 +4,22 @@
     overflow: hidden;
     &-block {
         .row-flex();
-
+        flex-wrap: nowrap;
+        
         &__logo {
             .size(2);
+            .sm-block({
+                .size(12);
+                flex-wrap: nowrap;
+                .shift-left(.5);
+            });
         }
         
         &-links {
             .size(6);
+            .sm-block({
+                display: none;
+            });
             padding-top: 35px;
             &__get-opros , &__portfolio , &__step-work , &__feedback , &__about {
                 padding-right: 30px;
@@ -18,6 +27,9 @@
         }
 
         &__soc {
+            .sm-block({
+                display: none;
+            });
             .row-flex();
             padding-top: 27px;
             .shift-left(-.5);
@@ -39,7 +51,24 @@
 
         &__call {
             .shift-left(.5);
+            .sm-block({
+                //display: flex;
+            });
             padding-top: 18px;
+
+            .page__btn-call {
+                .sm-block({
+                    display: none;
+                });
+                &_tel {
+                    display: none;
+                    .sprite(@icon-call-tel);
+                    .sm-block({
+                        display: block;
+                        .shift-left(-24);
+                    })
+                }
+            }
         }
 
     }
