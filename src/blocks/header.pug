@@ -3,9 +3,11 @@ header.header
         nav
             .header-block
                 .header-block__logo
-                    img.page__img(src="assets/img/img-logo-nav.png")
+                    a(href="/")
+                        .page__img
+                            img(src="assets/img/img-logo-nav.png")
                 .header-block-links
-                    a(href="#").page__link.header-block-links__get-opros Пройти опрос
+                    a(href="#banner").page__link.header-block-links__get-opros Пройти опрос
                     a(href="#").page__link.header-block-links__portfolio Портфолио
                     a(href="#").page__link.header-block-links__step-work Этапы работ
                     a(href="#").page__link.header-block-links__feedback Отзывы
