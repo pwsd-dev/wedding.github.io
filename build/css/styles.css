@@ -780,8 +780,10 @@ input:focus {
 }
 
 .projects-block__slider {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .projects-block__slider .tns-ovh {
@@ -789,8 +791,8 @@ input:focus {
 }
 
 .projects-block__slider .page__img {
-  width: 100px;
-  height: 100px;
+  width: 457px;
+  height: 352px;
   margin: 10px;
   background-color: red;
 }
