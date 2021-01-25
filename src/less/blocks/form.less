@@ -3,38 +3,69 @@
     background-repeat: no-repeat;
     padding-bottom: 87px;
     overflow: hidden;
+    .sm-block({
+       background-position: right;
+       padding-bottom: 60px;
+    });
     &-block {
         padding-top: 100px;
-        
+        .sm-block({
+            padding-top: 50px;
+         });
         .row-flex();
         flex-wrap: nowrap;
+        .sm-block({
+            flex-direction: column;
+        });
         &-img {
             .shift-left(1);
             .page__img {
                 .size(17);
+                .sm-block({
+                    .size(12);
+                    .shift-left(-1);
+                });
             }
         }
 
         &-form {
             .shift-left(2);
+            .sm-block({
+                .shift-left(1);
+            });
             //padding-left: 40px;
             .page__btn {
                 .size(3);
-
+                .sm-block({
+                    .size(6);
+                    .shift-left(-.1);
+                });
             }
 
             .page__title-h2 {
                 margin-bottom: 20px;
+                .sm-block({
+                    font-size: 25px;
+                    //padding-left: 0;
+                });
             }
 
             .page__text_very-small {
                 margin-bottom: 30px;
+                .sm-block({
+                    .size(10);
+                    margin-bottom: 20px;
+                });
             }
 
             form { 
                 display: flex;
                 flex-direction: column;
                 .size(7.5);
+                .sm-block({
+                    .size(10);
+                   
+                });
                 input {
                     margin-bottom: 20px;
                     border: none;

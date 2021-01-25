@@ -4,14 +4,24 @@
         padding-top: 130px;
         padding-bottom: 50px;
         .row-flex();
-
+        .sm-block({
+            flex-direction: column;
+            padding-bottom: 15px;
+        });
         &-description-profile {
             .size(4);
-            
+            .sm-block({
+                .size(9);
+                .shift-left(1);
+                
+            });
             background-color: @color_white;
             z-index: 20;
             .page__title-h2 {
-                
+                .sm-block({
+                    font-size: 25px;
+                    
+                });
                 margin-bottom: 40px;
                 position: relative;
                 &::before {
@@ -37,11 +47,23 @@
                     top: 271px;
                     left: -212px;
                     z-index: 10;
+                    opacity: 0.3;
                 }
             }
 
             .page__text_small-pink {
                 margin-bottom: 15px;
+                .sm-block({
+                    text-transform: uppercase;
+                    
+                });
+            }
+
+            .page__text_very-small {
+                .sm-block({
+                    .size(7);
+                    margin-bottom: 30px;
+                });
             }
         }
 
@@ -49,11 +71,24 @@
             .size(3);
             .page__img {
                 padding-left: 40px;
+                .sm-block({
+                    position: absolute;
+                    .size(4.5);
+                    left: 187px;
+                    /* top: -26px; */
+                    bottom: -8135px;
+                    z-index: 50;
+                    
+                });
             }
         }
 
         &-description-right {
             .size(5);
+            .sm-block({
+                .size(10);
+                padding-left: 45px;
+            });
             padding-left: 90px;
             padding-top: 30px;
             .page__text_small-pink {
@@ -75,6 +110,10 @@
 
             .page__text_very-small {
                 margin-bottom: 26px;
+                .sm-block({
+                    position: relative;
+                    
+                });
             }
         }
     }

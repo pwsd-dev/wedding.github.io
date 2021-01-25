@@ -7,9 +7,12 @@ html(lang='ru')
         block base
         block title
         block style
-            link(rel='stylesheet', href='css/styles.css', type='text/css')
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+            link(rel='stylesheet', href='css/styles.css', type='text/css')    
     body
         .page
             block content
         block script
+            script(src='js/tiny-slider.js')
             script(src='js/main.js')
+            

@@ -1,13 +1,27 @@
 .footer {
     overflow: hidden;
     padding-bottom: 30px;
+    .sm-block({
+        padding-bottom: 30px;
+    });
     &-block {
         .row-flex();
+        
         &-logo-descr {
             .row-flex();
+            .sm-block({
+                flex-direction: column;
+            });
+            .page__img {
+                .shift-left(3.7);
+            }
                 .page__text_very-small {
                     .size(6);
                     .shift-left(1);
+                    .sm-block({
+                        text-align: center;
+                        .shift-left(2.9);
+                    });
                     margin-top: 30px;
                 }
         }
@@ -15,9 +29,15 @@
         &-soc-call {
             .row-flex();
             .shift-left(2);
+            .sm-block({
+                .shift-left(3.5);
+            });
             .page__btn-call {
                 margin-top: 20px;
                 margin-left: 20px;
+                .sm-block({
+                    .shift-left(-3);
+                });
             }
 
             .header-block__soc-whatsapp, .header-block__soc-vk, .header-block__soc-instagram {

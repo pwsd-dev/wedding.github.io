@@ -8,12 +8,20 @@
             text-align: center;
             margin-top: 20px;
             margin-bottom: 40px;
+            .sm-block({
+                font-size: 25px;
+                .size(11);
+                margin-top: 10px;
+            });
         }
 
         .page__img {
             margin: 0 auto;
             text-align: center;
             padding-top: 70px;
+            .sm-block({
+                padding-top: 30px;
+            });
         }
 
         &-items {
@@ -26,6 +34,10 @@
                 //background-color: #fee2d9;
                 .size(4);
                 .col();
+                .sm-block({
+                    .size(12);
+                    .shift-left(-.5);
+                });
                 margin-top: 40px;
                 .page__text_very-small_pink {
                     .size(12);

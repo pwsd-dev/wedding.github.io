@@ -1,6 +1,9 @@
 .step-work {
     padding-top: 100px;
     overflow: hidden;
+    .sm-block({
+        padding-top: 40px;
+    });
     &-block {
         &__img {
             .page__img {
@@ -10,6 +13,10 @@
         }
         .page__title-h2 {
             .size(6);
+            .sm-block({
+                font-size: 25px;
+                .size(12);
+            });
             margin: 0 auto;
             text-align: center;
             margin-bottom: 40px;
@@ -20,15 +27,58 @@
 
         &-items {
             .row-flex();
+            .sm-block({
+                flex-direction: column;
+                
+            });
             &-item {
                 .size(4);
                 .col();
+                .sm-block({
+                    .size(12);
+                    margin-bottom: 20px;
+                });
                 &__background {
-                    background-color: @color_pink;
+                    background-color: @color_light-pink;
+                    
                     border-radius: 20px;
                     //height: 352px;
+                    &-hover {
+                        opacity: 0;
+                        .sm-block({
+                            opacity: 1;
+                        });
+                        //position: absolute;
+                        height: 235px;
+                        //background-color: rgba(0, 0, 0, .9);
+                        &_2 {
+                            opacity: 0;
+                            .sm-block({
+                                opacity: 1;
+                                text-align: center;
+                            });
+                            .page__link-step-work {
+                                //opacity: 0;
+                            }
+                            &:hover {
+                                opacity: 1;
+                                transition: all .3s;
+                                text-align: center;
+                            }
+                        }
+                        &:hover {
+                            opacity: 1;
+                            transition: all .3s;
+                            padding-top: 10px;
+                            padding-bottom: 15px;
+                        }
+
+                        
+                    }
+                    
                     .page__text_small {
-                        color: @color_white;
+                            
+                        color: @color_light-gray;
                         text-transform: uppercase;
                         text-align: center;
                         line-height: 25px;
@@ -38,7 +88,7 @@
 
                     .page__text_very-small {
                         
-                        color: @color_white;
+                        color: @color_light-gray;;
                         .size(10);
                         text-align: center;
                         margin: 0 auto;
@@ -66,50 +116,84 @@
                         width: 374px;
                         align-items: center;
                         padding-top: 70px;
-                        
+                        .sm-block({
+                            .size(13);
+                            border-radius: 25px;
+                            padding-top: 15px;
+                            
+                        });
                         
                         .page__text_small {
                             text-transform: uppercase;
+                            .sm-block({
+                                position: relative;
+                                top: 60px;
+                            });
+                            
                         }
 
                         .page__link-step-work {
-
+                            .sm-block({
+                                position: relative;
+                                top: 80px;
+                            });
                         }
                     }
 
                     &_concept {
                         background-image: url(../assets/img/img-bg-concept.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                           background-size: cover;
+                        });
                     }
 
                     &_stage {
                         background-image: url(../assets/img/img-bg-stage.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                            background-size: cover;
+                         });
                     }
 
                     &_team {
                         background-image: url(../assets/img/img-bg-team.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                            background-size: cover;
+                         });
                     }
 
                     &_logistic {
                         background-image: url(../assets/img/img-bg-logistic.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                            background-size: cover;
+                         });
                     }
 
                     &_event {
                         background-image: url(../assets/img/img-bg-event.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                            background-size: cover;
+                         });
                     }
 
                     &_work-project {
                         background-image: url(../assets/img/img-bg-work-project.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                            background-size: cover;
+                         });
                     }
 
                     &_post-production {
                         background-image: url(../assets/img/img-bg-post-production.png);
                         background-repeat: no-repeat;
+                        .sm-block({
+                            background-size: cover;
+                         });
                     }
                 }
             }

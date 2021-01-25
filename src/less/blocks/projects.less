@@ -1,21 +1,66 @@
 .projects {
     overflow: hidden;
     padding-bottom: 90px;
+    .wrapper {
+        overflow: hidden;
+    }
     &-block {
         &__img {
             .page__img {
                 margin: 0 auto;
                 margin-top: 80px;
                 margin-bottom: 20px;
+                
             }
         }
 
         .page__title-h2, .page__text_small {
             margin-bottom: 20px;
             text-align: center;
+            
         }
+
+        .page__title-h2 {
+            .sm-block({
+                font-size: 25px;
+        
+             });
+        }
+
+        &__slider {
+            width: 50%;
+            margin: 0 auto;
+            .tns-ovh {
+                overflow: inherit;
+            }
+            .page__img {
+
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background-color: red;
+            }
+        }
+
         .page__text_small {
             margin-bottom: 40px;
+        }
+
+        .projects-btns {
+            .projects-btn_prev {
+                width: 50px;
+                border: none;
+                border-radius: 50%;
+                height: 50px;
+                //background-color: @color_pink;
+            }
+
+            .projects-btn_next {
+                width: 50px;
+                border: none;
+                border-radius: 50%;
+                height: 50px;
+            }
         }
     }
 }

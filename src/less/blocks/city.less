@@ -2,22 +2,55 @@
     padding-top: 100px;
     padding-bottom: 150px;
     overflow: hidden;
+    .sm-block({
+                
+        padding-top: 20px;
+        
+    });
     &-block {
         .row-flex();
         flex-wrap: nowrap;
+        
+        .sm-block({
+                
+            flex-direction: column;
+            
+        });
         &-description {
             .page__title-h2 {
                 //.size(9);
                 margin-bottom: 20px;
+                .sm-block({
+                    padding-left: 20px;
+                    font-size: 25px;
+                    margin-bottom: 0;
+                });
             }
 
             .page__text_very-small {
                 .size(6);
                 margin-bottom: 20px;
+                .sm-block({
+                    padding-left: 20px;
+                    margin-top: 15px;
+                    .size(12);
+                });
+            }
+
+            .page__img {
+                .sm-block({
+                    padding-left: 20px;
+                    
+                });
             }
 
             .page__text_small {
                 .size(8);
+                .sm-block({
+                    padding-left: 20px;
+                    .size(11);
+                    
+                });
             }
         }
 
@@ -29,7 +62,11 @@
                 top: -55px;
                 //width: 693px;
                 //height: 528px;
-
+                .sm-block({
+                    .size(14);
+                    .shift-left(-1.5);
+                    padding-top: 15px;
+                });
                 
             }
         }

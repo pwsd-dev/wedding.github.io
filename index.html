@@ -4,9 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Заголовок страницы</title>
-		<base href="build/">
-		<link rel="stylesheet" href="css/styles.css" type="text/css">	
+		<title>Заголовок страницы</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
 		<div class="page">
@@ -39,6 +38,8 @@
 							<h2 class="page__title-h2">Организация </h2>
 							<h2 class="page__title-h2">вашей свадьбы</h2>
 							<h2 class="page__title-h2">в Крыму</h2>
+							<h2 class="page__title-h2-tel">Организация вашей</h2>
+							<h2 class="page__title-h2-tel">свадьбы в Крыму</h2>
 							<p class="page__text">Твоя идеальная свадьба, как арт-проект вашей истории любви</p>
 							<div class="page__btn">Узнать больше</div>
 							<p class="page__text_very-small">Пройди опрос и получи индивидуальный арт проект с расчетом стоимости</p>
@@ -54,7 +55,7 @@
 				<div class="wrapper">
 					<div class="tabs-block">
 						<div class="tabs-block-item">
-							<div class="tabs-block__img"><img class="page__img" src="assets/img/img-tab-1.png"></div>
+							<div class="tabs-block__img"><img class="page__img" src="assets/img/img-tabs-economy-budget.png"></div>
 							<div class="page__text_small_center tabs-block__description">Экономия вашего</div>
 							<div class="page__text_small_center tabs-block__description_center">бюджета до 30%</div>
 						</div>
@@ -98,7 +99,15 @@
 						<div class="projects-block__img"><img class="page__img" src="assets/img/img-rose.png"></div>
 						<h2 class="page__title-h2">Наши проекты под ключ</h2>
 						<p class="page__text_small">Фото и видео проектов</p>
-						<div class="projects-block__slider"><img class="page__img" src="assets/img/slider-zaglushka.png"></div>
+						<div class="projects-block__slider" id="projectsSlider">
+							<div class="page__img">1</div>
+							<div class="page__img">2</div>
+							<div class="page__img">3</div>
+						</div>
+						<div class="projects-btns">
+							<button class="projects-btn_prev"><</button>
+							<button class="projects-btn_next">></button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -379,6 +388,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="js/tiny-slider.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -3,6 +3,10 @@
     padding-top: 60px;
     padding-bottom: 30px;
     overflow: hidden;
+    .sm-block({
+        padding-bottom: 0;
+         
+     });
     &-block {
         .row-flex();
         flex-wrap: nowrap;
@@ -57,10 +61,23 @@
 
             .page__btn {
                 .size(4.5);
+                .sm-block({
+                    .shift-left(1.5);
+                    .size(6);
+                    margin-bottom: 15px;
+                });
             }
 
             .page__text_very-small {
                 .size(5);
+                .sm-block({
+                    .shift-left(3);
+                    .size(6.5);
+                    //text-align: center;
+                    top: 0;
+                    left: 0;
+                    margin-top: 10px;
+                });
                 position: relative;
                 top: -48px;
                 left: 255px;
@@ -72,6 +89,14 @@
                 position: relative;
                 top: -44px;
                 left: 196px;
+                .sm-block({
+                    top: 0;
+                    left: 0;
+                    transform: rotate(70deg);
+                    top: 106px;
+                    left: -63px;
+                    //transform: translateX(50px);
+                });
             }
         }
 
@@ -81,7 +106,9 @@
                position: relative;
                left: 100px;
                .sm-block({
-                display: none;
+                left: -5px;
+                .size(16);
+                //display: none;
                 });
             }
         }

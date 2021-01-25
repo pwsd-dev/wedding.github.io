@@ -3,6 +3,12 @@
     padding-top: 90px;
     padding-bottom: 80px;
     overflow: hidden;
+    .sm-block({
+       background-image: none;
+       background-color: @color_light-pink;
+       padding-top: 60px;
+       padding-bottom: 50px;
+    });
     &-block {
         .row-flex();
         &-img {
@@ -10,28 +16,74 @@
             &__img {
                 .page__img {
                     .size(12);
+                    .sm-block({
+                        order: 0;
+                        .size(11);
+                        padding-top: 28px;
+                        .shift-left(.5);
+                    });
                 }
             }
         }
 
         &-description {
             .size(5);
+            .page__img {
+                .sm-block({
+                    padding-left: 15px;
+                });
+            }
+            .sm-block({
+                order: -1;
+                top: 0;
+                left: 0;
+                .shift-left(.7);
+                background-color: @color_white;
+                padding-top: 30px;
+                border-radius: 25px;
+                width: 300px;
+
+                 
+            });
             position: relative;
             top: 120px;
             left: 20px;
             .page__title-h2 {
                 padding-bottom: 30px;
+                .sm-block({
+                    font-size: 25px;
+                    .size(11);
+                    padding-left: 15px;
+                    
+                });
             }
 
             .page__text_small {
                 padding-bottom: 30px;
+                .sm-block({
+                    .size(12);
+                    padding-left: 15px;
+                });
                 &_padding-left {
                     padding-left: 35px;
+                    .sm-block({
+                        .size(24);
+                        //.shift-left(.0);
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                        
+                    });
                 }
             }
 
             .page__btn {
                 .size(6);
+                .sm-block({
+                    .size(7);
+                    .shift-left(.1);
+                    font-size: 10px;
+                    
+                });
                 margin-bottom: 20px;
             }
         }

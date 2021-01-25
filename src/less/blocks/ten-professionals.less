@@ -14,15 +14,34 @@
 
         .page__title-h2 {
             text-align: center;
+            font-size: 25px;
+            .sm-block({
+                
+                margin-bottom: 20px;
+                
+            });
         }
 
         &-items {
             .row-flex();
             margin-top: 30px;
             justify-content: center;
+            .sm-block({
+                flex-direction: column;
+                margin-top: 0;
+                
+            });
             &__item {
                 .size(2);
                 .col();
+                .sm-block({
+                    .size(8);
+                    .shift-left(2);
+                    text-align: center;
+                    color: @color_pink;
+                    margin-bottom: 20px;
+                    
+                });
                 position: relative;
                 &:hover {
                     color: @color_pink;
@@ -48,6 +67,12 @@
             margin: 0 auto;
             margin-top: 70px;
             margin-bottom: 70px;
+            .sm-block({
+                margin-top: 20px;
+                margin-bottom: 30px;
+                .size(10);
+                text-align: center;
+            });
 
         }
     }

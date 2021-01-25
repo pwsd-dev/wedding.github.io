@@ -1,16 +1,28 @@
 .basis {
     background-image: url(../assets/img/img-bg-basis.png);
     background-repeat: no-repeat;
-    overflow: hidden;
+    //overflow: hidden;
+    .sm-block({
+        height: 540px;
+    });
     &-block {
         background-color: @color_white;
         position: relative;
         top: -170px;
+        .sm-block({
+            top: -230px;
+            .shift-left(-.5);
+            .size(13);
+        });
         .size(10);
         .shift-left(1);
         &-description {
             .size(7);
             .shift-left(2);
+            .sm-block({
+                .size(10);
+                .shift-left(1);
+            });
             padding-top: 65px;
             //padding-left: 65px;
             //padding-right: 65px;
@@ -35,7 +47,9 @@
                 .shift-left(2);
                 .shift-right(-1.9);
                 margin-bottom: 50px;
-                
+                .sm-block({
+                    margin-bottom: 32px;
+                });
                 &__img {
                     .page__img {
                         margin-right: 10px;
