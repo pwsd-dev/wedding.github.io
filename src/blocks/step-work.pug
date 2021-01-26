@@ -1,3 +1,13 @@
+mixin item(img, subtitle, text)
+    .step-work-block-items-item
+        .page__img
+            img(src=img)
+            h4.page__subtitle=subtitle
+            .page__link Узнать больше
+        .page__description
+            h4.page__subtitle=subtitle
+            p.page__text=text 
+                   
 section.step-work
     .wrapper
         .step-work-block
@@ -5,60 +15,55 @@ section.step-work
                 img.page__img(src="assets/img/img-rose.png")
             h2.page__title-h2 Этапы работ
             .step-work-block-items
-                .step-work-block-items-item
-                    .step-work-block-items-item__background
-                        img.page__img_small-rose(src="assets/img/img-small-rose.png")
-                        p.page__text_small Консультация, 
-                        p.page__text_small встречи, менеджмент
-                        .step-work-block-items-item__background-hover
-                            p.page__text_very-small Включают рассказ влюблённых о своей мечте, подробный разбор приоритетов исходя из пожеланий, консультации по форматам свадебного торжества, по местам проведения, по стилям, формированию свадебного бюджета и предварительное согласование сметы.
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_contract
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Заключение 
-                            p.page__text_small договора
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_concept
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Разработка 
-                            p.page__text_small концепции
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_stage
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Подбор 
-                            p.page__text_small площадки
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_team
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Подбор 
-                            p.page__text_small команды
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_logistic
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Логистика и
-                            p.page__text_small оборудование
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_event
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Подготовка 
-                            p.page__text_small к событию
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_work-project
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Работа 
-                            p.page__text_small на проекте
-                            a.page__link-step-work(href="#") Читать больше
-                .step-work-block-items-item
-                    .step-work-block-items-item__background_post-production
-                        .step-work-block-items-item__background-hover_2
-                            p.page__text_small Постпродакшн
-                            a.page__link-step-work(href="#") Читать больше
+                +item('assets/img/img-bg-contract.png','Консультация, встречи, менеджмент','Включают рассказ влюблённых о своей мечте, подробный разбор приоритетов исходя из пожеланий, консультации по форматам свадебного торжества, по местам проведения, по стилям, формированию свадебного бюджета и предварительное согласование сметы.')
+                +item('assets/img/img-bg-contract.png','Консультация, встречи, менеджмент','Включают рассказ влюблённых о своей мечте, подробный разбор приоритетов исходя из пожеланий, консультации по форматам свадебного торжества, по местам проведения, по стилям, формированию свадебного бюджета и предварительное согласование сметы.')
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_contract
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Заключение 
+                //-             p.page__text_small договора
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_concept
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Разработка 
+                //-             p.page__text_small концепции
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_stage
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Подбор 
+                //-             p.page__text_small площадки
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_team
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Подбор 
+                //-             p.page__text_small команды
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_logistic
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Логистика и
+                //-             p.page__text_small оборудование
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_event
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Подготовка 
+                //-             p.page__text_small к событию
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_work-project
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Работа 
+                //-             p.page__text_small на проекте
+                //-             a.page__link-step-work(href="#") Читать больше
+                //- .step-work-block-items-item
+                //-     .step-work-block-items-item__background_post-production
+                //-         .step-work-block-items-item__background-hover_2
+                //-             p.page__text_small Постпродакшн
+                //-             a.page__link-step-work(href="#") Читать больше
             .page__img
                 img.page__img(src="assets/img/img-rose.png")
             h2.page__title-h2 Отзывы молодожёнов о нашей работе

@@ -1165,11 +1165,64 @@ input:focus {
 }
 
 .step-work-block-items-item {
-  width: calc(33.333333333333336% - 30px);
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
+  width: calc(33.333333333333336% - 30px);
+  position: relative;
+  background-color: #fee2d9;
+  border-radius: 15px;
+  min-height: 374px;
+}
+
+.step-work-block-items-item .page__img {
+  height: 100%;
+}
+
+.step-work-block-items-item .page__description {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #eb5173;
+}
+
+.step-work-block-items-item .page__description:hover {
+  display: block;
+}
+
+.step-work-block-items-item .page__description::before {
+  content: '';
+  background-image: url(../assets/img/img-small-rose.png);
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.step-work-block-items-item .page__subtitle {
+  width: calc(66.66666666666667% - 30px);
+  margin: 55px auto 0;
+  font-family: "Montserrat-Regular";
+  color: #575757;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  padding-top: 10px;
+}
+
+.step-work-block-items-item .page__link {
+  text-align: center;
+  color: #eb5173;
+}
+
+.step-work-block-items-item .page__img:hover + .page__description {
+  display: block;
 }
 
 .step-work-block-items-item__background {
