@@ -676,7 +676,7 @@ input:focus {
   margin-right: calc(-50% + 15px);
   position: relative;
   left: -101px;
-  top: 15px;
+  top: -25px;
 }
 
 .banner .page__title-h2 {
