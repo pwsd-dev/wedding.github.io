@@ -1,14 +1,77 @@
 .slider-feedback {
     //overflow: hidden;
-    background-image: url(../assets/img/img-bg-slider-feedback.png);
-    background-repeat: no-repeat;
-    width: 1920px;
-    height: 382px;
-    margin-top: 160px;
+    
+    &__bg {
+        background-image: url(../assets/img/img-bg-slider-feedback.png);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
     &-block {
         .page__img_rose {
             position: relative;
             top: -110px;
+        }
+
+        &__slider {
+            
+            &-content {
+                .size(4.5);
+                margin: 0 auto;
+                padding-left: 3%;
+                
+                .tns-ovh {
+                    overflow: inherit;
+                }
+                .page__items{
+                    .row-flex();
+                    min-height: 400px;
+
+                }
+
+                .page__item{
+                    margin: 0 auto;
+                    display: inline-flex !important;
+                    align-items: center;
+                    flex-wrap: wrap;
+            }   }
+        }
+        .projects-btns {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .projects-btn{
+                width: 56px;
+                height: 56px;
+                background-color: @color_light-pink;
+                border-radius: 50%;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &_prev,
+                &_next{
+                    &::after{
+                        display: inline-block;
+                        content: '';
+                        .sprite(@icon-chevron);
+                    }
+                    
+                }
+                &_prev{
+                    position: relative;
+                    left: -10px;
+                }
+                &_next{
+                    position: relative;
+                    right: -10px;
+                    transform: rotate(180deg);
+                }
+            }
         }
     }
 }

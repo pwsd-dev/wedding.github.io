@@ -9,11 +9,15 @@
         
         &-logo-descr {
             .row-flex();
+            //flex-wrap: nowrap;
             .sm-block({
                 flex-direction: column;
             });
             .page__img {
-                .shift-left(3.7);
+                //.shift-left(3.7);
+                .sm-block({
+                    .shift-left(3.7);
+                });
             }
                 .page__text_very-small {
                     .size(6);
@@ -28,7 +32,7 @@
 
         &-soc-call {
             .row-flex();
-            .shift-left(2);
+            //.shift-left(2);
             .sm-block({
                 .shift-left(3.5);
             });

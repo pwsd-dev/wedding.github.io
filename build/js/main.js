@@ -13,6 +13,22 @@ if(document.getElementById('projectsSlider')){
         swipeAngle: true,
       });
 }
+
+if(document.getElementById('feedbackSlider')){
+  var slider = tns({
+      // mode:"gallery",
+      container: '#feedbackSlider',
+      items: 1,
+      startIndex: 0,
+      slideBy: 'page',
+      autoplay: false,
+      prevButton: '.projects-btn_prev',
+      nextButton: '.projects-btn_next',
+      nav: false,
+      loop: true,
+      swipeAngle: true,
+    });
+}
   
 //дальше копирую полностью конструкцию, вместе с циклом if
 
