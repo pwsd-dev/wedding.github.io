@@ -2,10 +2,9 @@
 <html lang="ru"> 
 	<head>
 		<meta charset="utf-8">
-		<base href="build/">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Заголовок страницы</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+		<title>AClass</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -17,8 +16,9 @@
 				<div class="wrapper">
 					<nav>
 						<div class="header-block">
-							<div class="header-block__logo"><img class="page__img" src="assets/img/img-logo-nav.png"></div>
-							<div class="header-block-links"><a class="page__link header-block-links__get-opros" href="#">Пройти опрос</a><a class="page__link header-block-links__portfolio" href="#">Портфолио</a><a class="page__link header-block-links__step-work" href="#">Этапы работ</a><a class="page__link header-block-links__feedback" href="#">Отзывы</a><a class="page__link header-block-links__about" href="#">О нас</a></div>
+							<div class="header-block__logo"><a href="/">
+									<div class="page__img"><img src="assets/img/img-logo-nav.png"></div></a></div>
+							<div class="header-block-links"><a class="page__link header-block-links__get-opros" href="#banner">Пройти опрос</a><a class="page__link header-block-links__portfolio" href="#">Портфолио</a><a class="page__link header-block-links__step-work" href="#">Этапы работ</a><a class="page__link header-block-links__feedback" href="#">Отзывы</a><a class="page__link header-block-links__about" href="#">О нас</a></div>
 							<div class="header-block__soc">
 								<div class="header-block__soc-whatsapp"></div>
 								<div class="header-block__soc-vk"></div>
@@ -32,7 +32,8 @@
 					</nav>
 				</div>
 			</header>
-			<section class="banner">
+			<section class="banner" id="banner">
+				<div class="banner_bg"></div>
 				<div class="wrapper">
 					<div class="banner-block">
 						<div class="banner-block__description"><img class="page__img_rose" src="assets/img/img-rose.png">
@@ -368,8 +369,6 @@
 								<div class="page__img">1</div>
 								<div class="page__img">2</div>
 								<div class="page__img">3</div>
-								<div class="page__img">4</div>
-								<div class="page__img">5</div>
 							</div>
 						</div>
 						<div class="projects-btns">

@@ -4,10 +4,10 @@
             font-family: "@{pala}";
             color: @color_gray;
         }
-            &-h1 {
+        &-h1 {
                 font-size: 61px;  
         }
-            &-h2 {
+        &-h2 {
                 font-size: 50px;
                 &-tel {
                     display: none;
@@ -99,6 +99,12 @@
     }
 
     &__btn {
+        border: none;
+        padding: 24px 62px 26px;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 49px;
+
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -106,31 +112,29 @@
         text-decoration: none;
         
 
-        border-radius: 25px;
-        height: 45px;
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 30px;
+        letter-spacing: 0.03em;
+        
         font-family: "@{Montserrat}-Regular";
         text-transform: uppercase;
-        border: 2px solid @color_pink;
+        // border: 2px solid @color_pink;
         color: @color_white;
         background-color: @color_pink;
-        padding-left: 45px;
-        padding-right: 45px;
-        flex-wrap: nowrap;
+    
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 10%;
+            .sprite(@icon-strelka);
+            margin-left: 10px;
+            color: @color_white;
+            opacity: 0;
+        }
         &:hover {
             transition: all ease-out 0.5s;
             background-color: @color_pink-dark;
-            color: @color_white;
-            
-            font-size: 10px;
             &::after {
-                content: '';
-                .sprite(@icon-strelka);
-                margin-left: 10px;
-                color: @color_white;
-                flex-wrap: nowrap;
+                opacity: 1;
             }
         }
         &-call {
