@@ -16,69 +16,109 @@
             padding: 0;
          });
         &-item {
-            .size(3);
             .col();
+            .size(3);
+            
             .sm-block({
                 padding-bottom: 80px;
                 .shift-left(1);
              });
-            &__description {
+            
+            .page__text{
+                font-size: 19px;
+                line-height: 23px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+                margin-top: 32%;
+            }
+            &__bg{
                 display: flex;
-                align-self: center;
-                .sm-block({
-                    flex-direction: column;
+                justify-content: center;
+
+                // background-color: @color_light-pink;
+                .page__icon{
+                    cursor: pointer;
+                    background-color: @color_white;
+                    border-radius: 14.6772px;
+
+                    display: flex;
+                    position: relative;
+                    // top: 32px;
+                    top: 58px;
+                    width: 100%;
+                    margin: 0 40px;
+                    align-items: center;
                     justify-content: center;
-                    margin: 0 auto;
-                    padding: 0;
-                 });
-                 .page__text_small_center {
-                    .sm-block({
-                        .size(12);
-                     });
+                   
+                    height: 205.48px;
+                    box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
+                    transition: all .5s ease-out;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        // top: -32px;
+                        top: -58px;
+                        background-color: @color_light-pink;
+                        width: 100%;
+                        height: 73%;
+                        
+                        z-index: -1;
+                        border-radius: 14.6772px;
+
+                        padding: 35px 35px 0;
+                        transition: all .5s ease-out;
+                    }
+                    &:hover{
+                        top: 32px;
+                        .page__icon_proximo{
+                            .sprite(@icon-proximo-pink);
+                        }
+                        .page{
+                            &__icon{
+                                &_proximo{
+                                    .sprite(@icon-proximo-pink);
+                                }
+                                &_micriophone{
+                                    .sprite(@icon-micriophone-pink);
+                                }
+                                &_wedding-ring{
+                                    .sprite(@icon-wedding-ring-pink);
+                                }
+                                &_celebration{
+                                    .sprite(@icon-celebration-pink);
+                                }
+                                
+                            }
+                        }
+                        
+                        &::before{
+                            top: -32px;
+                            background-color: @color_pink-dark;
+                        }
+                    }
                 }
-                
             }
-
-            .page__text_small_center {
-                //padding-top: 40px;
-                position: relative;
-                top: 60px;
-                .sm-block({
-                    flex-direction: column;
-                    justify-content: center;
-                    margin: 0 auto;
-                    //padding: 0;
-                    .size(48);
-                    .shift-left(1);
-                    text-transform: uppercase;
-                    //padding-top: 20px;
-                    //padding-bottom: 20px;
-                    //width: 100%;
-                 });
-                
-                
-            }
-
             &__bg-hover {
                 background-color: @color_light-pink;
-                width: 250px;
-                height: 186px;
+                // width: 250px;
+                // height: 186px;
                 border-radius: 25px;
                 &__bg {
                     background-color: @color_white;
-                    width: 40px;
+                    // width: 40px;
                 }
                 
             }
 
             &__icon {
                 background-color: @color_white;
-                width: 178px;
+                // width: 178px;
                 /* padding-left: 40px; */
-                position: relative;
-                top: 52px;
-                left: 40px;
-                height: 177px;
+                // position: relative;
+                // top: 52px;
+                // left: 40px;
+                // height: 177px;
                 border-radius: 25px;
                 svg {
                     position: relative;

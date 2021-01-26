@@ -443,7 +443,7 @@ input:focus {
   position: absolute;
   right: 10%;
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px -102px;
+  background-position: -232px -184px;
   width: 13px;
   height: 13px;
   margin-left: 10px;
@@ -487,7 +487,7 @@ input:focus {
 .page__btn-call::before {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: -103px -72px;
+  background-position: -232px -156px;
   width: 18px;
   height: 18px;
   margin-right: 10px;
@@ -503,11 +503,39 @@ input:focus {
 .page__btn-call:hover::before {
   content: '';
   background-image: url(../assets/icons/sprite.png);
-  background-position: -103px -44px;
+  background-position: -232px -128px;
   width: 19px;
   height: 18px;
   margin-right: 10px;
   color: #fff;
+}
+
+.page__icon_proximo {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -158px 0px;
+  width: 64px;
+  height: 64px;
+}
+
+.page__icon_micriophone {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: 0px 0px;
+  width: 69px;
+  height: 71px;
+}
+
+.page__icon_wedding-ring {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: 0px -155px;
+  width: 48px;
+  height: 65px;
+}
+
+.page__icon_celebration {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: 0px -81px;
+  width: 64px;
+  height: 64px;
 }
 
 .header {
@@ -556,7 +584,7 @@ input:focus {
 .header-block__soc-whatsapp {
   margin-right: 15px;
   background-image: url(../assets/icons/sprite.png);
-  background-position: -43px -60px;
+  background-position: -232px -42px;
   width: 32px;
   height: 32px;
 }
@@ -564,7 +592,7 @@ input:focus {
 .header-block__soc-vk {
   margin-right: 15px;
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px -60px;
+  background-position: -232px 0px;
   width: 33px;
   height: 32px;
 }
@@ -572,7 +600,7 @@ input:focus {
 .header-block__soc-instagram {
   margin-right: 15px;
   background-image: url(../assets/icons/sprite.png);
-  background-position: -60px 0px;
+  background-position: -176px -155px;
   width: 33px;
   height: 32px;
 }
@@ -585,7 +613,7 @@ input:focus {
 .header-block__call .page__btn-call_tel {
   display: none;
   background-image: url(../assets/icons/sprite.png);
-  background-position: 0px 0px;
+  background-position: -116px -155px;
   width: 50px;
   height: 50px;
 }
@@ -700,44 +728,119 @@ input:focus {
 }
 
 .tabs-block-item {
-  width: calc(25% - 30px);
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
+  width: calc(25% - 30px);
 }
 
-.tabs-block-item__description {
+.tabs-block-item .page__text {
+  font-size: 19px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 32%;
+}
+
+.tabs-block-item__bg {
   display: -webkit-box;
   display: flex;
-  align-self: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
-.tabs-block-item .page__text_small_center {
+.tabs-block-item__bg .page__icon {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 14.6772px;
+  display: -webkit-box;
+  display: flex;
   position: relative;
-  top: 60px;
+  top: 58px;
+  width: 100%;
+  margin: 0 40px;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 205.48px;
+  box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.tabs-block-item__bg .page__icon::before {
+  content: '';
+  position: absolute;
+  top: -58px;
+  background-color: #fee2d9;
+  width: 100%;
+  height: 73%;
+  z-index: -1;
+  border-radius: 14.6772px;
+  padding: 35px 35px 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.tabs-block-item__bg .page__icon:hover {
+  top: 32px;
+}
+
+.tabs-block-item__bg .page__icon:hover .page__icon_proximo {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -158px -74px;
+  width: 64px;
+  height: 64px;
+}
+
+.tabs-block-item__bg .page__icon:hover .page__icon_proximo {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -158px -74px;
+  width: 64px;
+  height: 64px;
+}
+
+.tabs-block-item__bg .page__icon:hover .page__icon_micriophone {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -79px 0px;
+  width: 69px;
+  height: 71px;
+}
+
+.tabs-block-item__bg .page__icon:hover .page__icon_wedding-ring {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -58px -155px;
+  width: 48px;
+  height: 65px;
+}
+
+.tabs-block-item__bg .page__icon:hover .page__icon_celebration {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -74px -81px;
+  width: 64px;
+  height: 64px;
+}
+
+.tabs-block-item__bg .page__icon:hover::before {
+  top: -32px;
+  background-color: #cc3556;
 }
 
 .tabs-block-item__bg-hover {
   background-color: #fee2d9;
-  width: 250px;
-  height: 186px;
   border-radius: 25px;
 }
 
 .tabs-block-item__bg-hover__bg {
   background-color: #fff;
-  width: 40px;
 }
 
 .tabs-block-item__icon {
   background-color: #fff;
-  width: 178px;
   /* padding-left: 40px; */
-  position: relative;
-  top: 52px;
-  left: 40px;
-  height: 177px;
   border-radius: 25px;
 }
 
@@ -1435,7 +1538,7 @@ input:focus {
   content: '';
   display: inline-block;
   background-image: url(../assets/icons/sprite.png);
-  background-position: -103px 0px;
+  background-position: -232px -84px;
   width: 24px;
   height: 34px;
   position: absolute;
@@ -1625,32 +1728,6 @@ input:focus {
   .tabs-block-item {
     padding-bottom: 80px;
     margin-left: calc(8.333333333333334% + 15px);
-  }
-
-  .tabs-block-item__description {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .tabs-block-item__description .page__text_small_center {
-    width: calc(100% - 30px);
-  }
-
-  .tabs-block-item .page__text_small_center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-    width: calc(400% - 30px);
-    margin-left: calc(8.333333333333334% + 15px);
-    text-transform: uppercase;
   }
 
   .how-work-block .page__title-h2 {
