@@ -1,3 +1,12 @@
+mixin item(name)
+    .page__item
+        .page__img 
+            img(src="assets/img/img-video-1.png")
+            .page__toggles
+                button.page__icon.page__icon_photograph
+                button.page__icon.page__icon_videocamera
+            .page__text.name Антон и Юлия
+        
 section.projects
     .wrapper
         .projects-block
@@ -6,10 +15,13 @@ section.projects
             h2.page__title-h2 Наши проекты под ключ
             p.page__text_small Фото и видео проектов
             .projects-block__slider
-                #projectsSlider
-                    .page__img 1
-                    .page__img 2
-                    .page__img 3
-            .projects-btns
-                button.projects-btn_prev <
-                button.projects-btn_next >
+                .projects-block__slider-content
+                    #projectsSlider.page__items
+                            +item()
+                            +item()
+                            +item()
+                            +item()
+                            +item()
+                .projects-btns
+                    button.projects-btn.projects-btn_prev
+                    button.projects-btn.projects-btn_next 

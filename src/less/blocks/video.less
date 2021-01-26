@@ -1,10 +1,15 @@
 .video {
-    background-image: url(../assets/img/img-bg-video.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    //width: 1920px;
-    //height: 382px;
+    
+    position: relative;
     margin-top: 200px;
+    &_bg{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/img/img-bg-video.png);
+    }
     .sm-block({
         //width: ;
         height: 144px;
@@ -12,20 +17,19 @@
 
      });
     &-block {
-        &__img {
-            .page__img {
+        display: flex;
+        justify-content: center;
+        .page__video{
+            position: relative;
+            //margin: 0 auto;
+            top: -200px;
+            .sm-block({
+                .size(11);
                 position: relative;
-                //margin: 0 auto;
-                top: -200px;
-                left: 65px;
-                .sm-block({
-                    .size(11);
-                    position: relative;
-                    top: -50px;
-                    left: 30px;
-            
-                });
-            }
+                top: -50px;
+                left: 30px;
+        
+            });
         }
     }
     

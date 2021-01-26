@@ -28,19 +28,79 @@
         }
 
         &__slider {
-            width: 40%;
-            margin: 0 auto;
-            
-            .tns-ovh {
-                overflow: inherit;
-            }
-            .page__img {
+            position: relative;
+            &-content{
+                .size(4.5);
+                margin: 0 auto;
+                padding-left: 3%;
+                .tns-ovh {
+                    overflow: inherit;
+                }
+                .page__items{
+                    .row-flex();
+                    min-height: 400px;
 
-                width: 457px;
-                height: 352px;
-                margin: 10px;
-                background-color: red;
+                }
+    
+                .page__item{
+                    margin: 0 auto;
+                    display: inline-flex !important;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    &.tns-slide-active{
+                        .page__img {
+                            // max-width: 457px;
+                            // max-height: 352px;
+                            // transform: scale(1.35);
+                            transform: scale(1.1);
+                        }
+                        .page__text{
+                            color:  @color_pink;;
+                        }
+                        .page__toggles{
+                            
+                            transform: scale(1);
+                            top: 8px;
+                            right: 16px;
+                        }
+                       
+                    }
+                    .page__img {
+                        position: relative;
+                        margin: 0 auto;
+                        transition: all .5s ease-out;
+                        transform: scale(.8);
+                        max-width: 457px;
+                        max-height: 352px;
+                        // max-width: 335px;
+                        // max-height: 258.25px;
+                    }
+                    .page__text{
+                        font-size: 20px;
+                        line-height: 24px;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    .page__toggles{
+                        transition: all .5s ease-out;
+                        transform: scale(.5);
+                        position: absolute;
+                        top: 0;
+                        right: 0px;
+                    
+                       
+                        .page__icon{
+                            border: none;
+                            margin: 0 3px;
+                            background-color: transparent;
+                        }
+                    }
+                }
             }
+            
+            
         }
 
         .page__text_small {
@@ -48,19 +108,39 @@
         }
 
         .projects-btns {
-            .projects-btn_prev {
-                width: 50px;
-                border: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .projects-btn{
+                width: 56px;
+                height: 56px;
+                background-color: @color_light-pink;
                 border-radius: 50%;
-                height: 50px;
-                //background-color: @color_pink;
-            }
-
-            .projects-btn_next {
-                width: 50px;
                 border: none;
-                border-radius: 50%;
-                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &_prev,
+                &_next{
+                    &::after{
+                        display: inline-block;
+                        content: '';
+                        .sprite(@icon-chevron);
+                    }
+                    
+                }
+                &_prev{
+                    position: relative;
+                    left: -10px;
+                }
+                &_next{
+                    position: relative;
+                    right: -10px;
+                    transform: rotate(180deg);
+                }
             }
         }
     }
