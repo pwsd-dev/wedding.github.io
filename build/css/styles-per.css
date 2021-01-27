@@ -563,6 +563,11 @@ input:focus {
   padding-top: 10px;
   padding-bottom: 20px;
   overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
 }
 
 .header-block {
@@ -572,6 +577,8 @@ input:focus {
   margin-left: -1.55%;
   margin-right: -1.55%;
   flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .header-block__logo {
@@ -1205,6 +1212,7 @@ input:focus {
   border-radius: 15px;
   padding: 78px 40px 0;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 .step-work-block-items-item .page__description:hover {
@@ -1629,6 +1637,7 @@ input:focus {
 
 .professional-block-description-right .page__text_small-pink {
   margin-bottom: 15px;
+  font-weight: bold;
   position: relative;
 }
 
@@ -1683,6 +1692,10 @@ input:focus {
   margin-left: 1.55%;
   margin-right: 1.55%;
   position: relative;
+  color: #eb5173;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .ten-professionals-block-items__item:hover {
@@ -1715,6 +1728,17 @@ input:focus {
   padding-top: 100px;
   padding-bottom: 150px;
   overflow: hidden;
+  position: relative;
+}
+
+.city_bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FEE2D9), to(rgba(254, 226, 217, 0)));
+  background: -webkit-linear-gradient(bottom, #FEE2D9 0%, rgba(254, 226, 217, 0) 100%);
+  background: linear-gradient(0deg, #FEE2D9 0%, rgba(254, 226, 217, 0) 100%);
+  opacity: 0.2;
 }
 
 .city-block {
@@ -1945,6 +1969,8 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-block-logo-descr {
