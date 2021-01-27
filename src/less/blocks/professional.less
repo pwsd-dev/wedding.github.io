@@ -10,12 +10,25 @@
         });
         &-description-profile {
             .size(4);
+            position: relative;
             .sm-block({
                 .size(9);
                 .shift-left(1);
                 
             });
-            background-color: @color_white;
+
+            &__bg {
+                background-color: @color_white;
+                position: absolute;
+                z-index: -40;
+                width: 467px;
+                height: 440px;
+                left: -30px;
+                top: -38px;
+                border-radius: 25px;
+                box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
+            }
+            //background-color: @color_white;
             z-index: 20;
             .page__title-h2 {
                 .sm-block({
@@ -34,7 +47,7 @@
                     height: 290px;
                     top: -235px;
                     left: 174px;
-                    z-index: 10;
+                    z-index: -50;
                 }
                 &::after {
                     content: '';
@@ -44,16 +57,18 @@
                     background-repeat: no-repeat;
                     width: 335px;
                     height: 290px;
-                    top: 271px;
-                    left: -212px;
-                    z-index: 10;
+                    top: 180px;
+                    left: -176px;
+                    z-index: -50;
                     opacity: 0.3;
                 }
             }
 
             .page__text_small-pink {
                 margin-bottom: 15px;
-                
+                text-transform: uppercase;
+                font-family: "@{Montserrat}-Regular";
+                font-size: 20px;
                 .sm-block({
                     text-transform: uppercase;
                     
@@ -61,7 +76,11 @@
             }
 
             .page__text_very-small {
+                font-family: "@{Montserrat}-Regular";
+                font-size: 16px;
+                line-height: 20px;
                 
+                .size(14);
                 .sm-block({
                     .size(7);
                     margin-bottom: 30px;
@@ -71,6 +90,8 @@
 
         &-img-center {
             .size(3);
+            position: relative;
+            z-index: 300;
             .page__img {
                 padding-left: 40px;
                 .sm-block({

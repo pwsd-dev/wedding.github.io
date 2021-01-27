@@ -565,7 +565,7 @@ input:focus {
 
 .header {
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 3px;
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
@@ -591,6 +591,9 @@ input:focus {
 
 .header-block-links {
   width: 46.9%;
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  color: #4d4d4d;
   padding-top: 35px;
 }
 
@@ -603,6 +606,8 @@ input:focus {
 }
 
 .header-block__soc {
+  position: relative;
+  left: 40px;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
@@ -702,10 +707,11 @@ input:focus {
   display: inline-flex;
   position: relative;
   color: #000;
-  opacity: 0.9;
+  opacity: 0.4;
   margin-left: 47px;
   font-size: 16px;
   line-height: 20px;
+  bottom: 19px;
   width: 44.4%;
 }
 
@@ -924,6 +930,9 @@ input:focus {
 }
 
 .how-work-block .page__text_small {
+  width: 46.9%;
+  line-height: 30px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 84px;
 }
@@ -934,7 +943,7 @@ input:focus {
 }
 
 .video_bg {
-  height: 100%;
+  height: 380px;
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
@@ -1123,17 +1132,37 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  flex-wrap: nowrap;
+}
+
+.price-block__bg {
+  background-color: rebeccapurple;
 }
 
 .price-block-img__img .page__img {
   width: 96.9%;
+  z-index: 170;
+  position: relative;
 }
 
 .price-block-description {
   width: 38.56666667%;
+  z-index: 120;
   position: relative;
   top: 120px;
   left: 20px;
+}
+
+.price-block-description__bg {
+  background-color: #fff;
+  position: absolute;
+  width: 725px;
+  height: 500px;
+  right: -89px;
+  top: -46px;
+  z-index: -20;
+  border-radius: 25px;
+  box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
 }
 
 .price-block-description .page__title-h2 {
@@ -1142,10 +1171,19 @@ input:focus {
 
 .price-block-description .page__text_small {
   padding-bottom: 30px;
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  line-height: 20px;
+  width: 80.23333333%;
 }
 
 .price-block-description .page__text_small_padding-left {
   padding-left: 35px;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  color: #575757;
+  position: relative;
+  left: 35px;
 }
 
 .price-block-description .page__btn {
@@ -1584,8 +1622,20 @@ input:focus {
 
 .professional-block-description-profile {
   width: 30.23333333%;
-  background-color: #fff;
+  position: relative;
   z-index: 20;
+}
+
+.professional-block-description-profile__bg {
+  background-color: #fff;
+  position: absolute;
+  z-index: -40;
+  width: 467px;
+  height: 440px;
+  left: -30px;
+  top: -38px;
+  border-radius: 25px;
+  box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
 }
 
 .professional-block-description-profile .page__title-h2 {
@@ -1603,7 +1653,7 @@ input:focus {
   height: 290px;
   top: -235px;
   left: 174px;
-  z-index: 10;
+  z-index: -50;
 }
 
 .professional-block-description-profile .page__title-h2::after {
@@ -1614,18 +1664,30 @@ input:focus {
   background-repeat: no-repeat;
   width: 335px;
   height: 290px;
-  top: 271px;
-  left: -212px;
-  z-index: 10;
+  top: 180px;
+  left: -176px;
+  z-index: -50;
   opacity: 0.3;
 }
 
 .professional-block-description-profile .page__text_small-pink {
   margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular";
+  font-size: 20px;
+}
+
+.professional-block-description-profile .page__text_very-small {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  line-height: 20px;
+  width: 113.56666667%;
 }
 
 .professional-block-img-center {
   width: 21.9%;
+  position: relative;
+  z-index: 300;
 }
 
 .professional-block-img-center .page__img {
@@ -1674,7 +1736,7 @@ input:focus {
 
 .ten-professionals-block .page__title-h2 {
   text-align: center;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .ten-professionals-block-items {
@@ -1686,6 +1748,7 @@ input:focus {
   margin-top: 30px;
   -webkit-box-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .ten-professionals-block-items__item {
@@ -1725,6 +1788,8 @@ input:focus {
   margin: 0 auto;
   margin-top: 70px;
   margin-bottom: 70px;
+  font-family: "Montserrat-Regular";
+  text-align: center;
 }
 
 .city {
@@ -1763,7 +1828,8 @@ input:focus {
 }
 
 .city-block-description .page__text_small {
-  width: 63.56666667%;
+  width: 80.23333333%;
+  padding-bottom: 10px;
 }
 
 .city-block-img .page__img {
@@ -1782,6 +1848,7 @@ input:focus {
   background-color: #fff;
   position: relative;
   top: -170px;
+  border-radius: 25px;
   width: 80.23333333%;
   margin-left: 9.88333333%;
 }
@@ -1794,6 +1861,7 @@ input:focus {
 
 .basis-block-description .page__text_small-pink {
   margin-bottom: 12px;
+  font-family: "pala-Bold";
 }
 
 .basis-block-description .page__text_very-small {
@@ -1814,10 +1882,18 @@ input:focus {
   flex-wrap: wrap;
   margin-left: -1.55%;
   margin-right: -1.55%;
+  flex-wrap: nowrap;
   width: 30.23333333%;
   margin-left: 18.21666667%;
   margin-right: -14.28333333%;
   margin-bottom: 50px;
+}
+
+.basis-block-items-item .page__text_very-small {
+  font-family: "pala-Bold";
+  padding-left: 5px;
+  position: relative;
+  top: 7px;
 }
 
 .basis-block-items-item__img .page__img {
@@ -1825,13 +1901,13 @@ input:focus {
 }
 
 .form {
-  background-image: url(../assets/img/form-bg.png);
   background-repeat: no-repeat;
-  padding-bottom: 87px;
+  padding-bottom: 127px;
   overflow: hidden;
 }
 
 .form-block {
+  position: relative;
   padding-top: 100px;
   display: -webkit-box;
   display: flex;
@@ -1839,6 +1915,53 @@ input:focus {
   margin-left: -1.55%;
   margin-right: -1.55%;
   flex-wrap: nowrap;
+}
+
+.form-block__bg_pink {
+  position: absolute;
+  background-color: #fee2d9;
+  width: 1300px;
+  height: 900px;
+  z-index: -170;
+  left: 500px;
+  top: -100px;
+  border-radius: 25px;
+}
+
+.form-block__bg_white {
+  position: absolute;
+  width: 1150px;
+  height: 544px;
+  top: 56px;
+  z-index: -150;
+  left: 85px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
+}
+
+.form-block__bg_white::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-image: url(../assets/img/img-form-vetka-1.png);
+  width: 440px;
+  height: 400px;
+  background-repeat: no-repeat;
+  z-index: -1000;
+  top: -168px;
+}
+
+.form-block__bg_white::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-image: url(../assets/img/img-form-vetka-2.png);
+  width: 440px;
+  height: 400px;
+  background-repeat: no-repeat;
+  top: 425px;
+  left: -150px;
 }
 
 .form-block-img {
@@ -1855,6 +1978,7 @@ input:focus {
 
 .form-block-form .page__btn {
   width: 21.9%;
+  height: 10px;
 }
 
 .form-block-form .page__title-h2 {
@@ -2518,6 +2642,7 @@ input:focus {
   }
 
   .ten-professionals-block .page__title-h2 {
+    font-size: 25px;
     margin-bottom: 20px;
   }
 
