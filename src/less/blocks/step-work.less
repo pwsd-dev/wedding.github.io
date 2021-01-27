@@ -37,6 +37,7 @@
                 position: relative;
                 background-color: @color_light-pink;
                 border-radius: 15px;
+                margin-bottom: 18px;
                 .sm-block({
                     .size(12);
                     margin-bottom: 20px;
@@ -44,6 +45,11 @@
                 min-height: 374px;
                 .page__img{
                     height: 100%;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    img{
+                        transform: scale(1.08);
+                    }
                 }
                 .page__description{
                     cursor: pointer;
@@ -51,6 +57,10 @@
                     position: absolute;
                     top: 0;
                     background-color: @color_pink;
+                    min-height: 374px;
+                    border-radius: 15px;
+                    padding: 78px 40px 0;
+                    box-sizing: border-box;
                     &:hover{
                         display: block;
                     }
@@ -59,28 +69,47 @@
                         background-image: url(../assets/img/img-small-rose.png);
                         display: inline-block;
                         position: absolute;
-                        right: 0;
-                        top: 0;
+                        right: -37px;
+                        top: 22px;
                         width: 100%;
                         height: 100%;
                         background-repeat: no-repeat;
                         
                     }
+                    .page__subtitle,
+                    .page__text{
+                        color: @color_white;
+                    }
+                    .page__subtitle{
+                        width: 100%;
+                        
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 0;
+                        margin-bottom: 18px;
+                    }
+                    .page__text{
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
                 }
+                
                 .page__subtitle{
-                    .size(8);
-                    margin: 55px auto 0;
+                    .size(9.8);
+                    margin: 40px auto 30px;
                     font-family: "@{Montserrat}-Regular";
                     color: @color_light-gray;
                     text-transform: uppercase;
                     text-align: center;
                     font-weight: bold;
-                    line-height: 25px;
-                    padding-top: 10px;
+                    font-size: 20px;
+                    line-height: 24px;
                 }
                 .page__link{
                     text-align: center;
                     color: @color_pink;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
                 .page__img{
                     &:hover{

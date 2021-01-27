@@ -1180,11 +1180,19 @@ input:focus {
   position: relative;
   background-color: #fee2d9;
   border-radius: 15px;
+  margin-bottom: 18px;
   min-height: 374px;
 }
 
 .step-work-block-items-item .page__img {
   height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.step-work-block-items-item .page__img img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .step-work-block-items-item .page__description {
@@ -1193,6 +1201,10 @@ input:focus {
   position: absolute;
   top: 0;
   background-color: #eb5173;
+  min-height: 374px;
+  border-radius: 15px;
+  padding: 78px 40px 0;
+  box-sizing: border-box;
 }
 
 .step-work-block-items-item .page__description:hover {
@@ -1204,28 +1216,48 @@ input:focus {
   background-image: url(../assets/img/img-small-rose.png);
   display: inline-block;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -37px;
+  top: 22px;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
 }
 
+.step-work-block-items-item .page__description .page__subtitle,
+.step-work-block-items-item .page__description .page__text {
+  color: #fff;
+}
+
+.step-work-block-items-item .page__description .page__subtitle {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.step-work-block-items-item .page__description .page__text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .step-work-block-items-item .page__subtitle {
-  width: 63.56666667%;
-  margin: 55px auto 0;
+  width: 78.56666667%;
+  margin: 40px auto 30px;
   font-family: "Montserrat-Regular";
   color: #575757;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  line-height: 25px;
-  padding-top: 10px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .step-work-block-items-item .page__link {
   text-align: center;
   color: #eb5173;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .step-work-block-items-item .page__img:hover + .page__description {
