@@ -2360,7 +2360,8 @@ input:focus {
   }
 
   .banner-block__description .page__img_rose {
-    margin-left: calc(33.333333333333336% + 15px);
+    margin-left: calc(75% + 15px);
+    padding-top: 0;
   }
 
   .banner-block__description {
@@ -2370,28 +2371,37 @@ input:focus {
   }
 
   .banner-block__description .page__title-h2 {
-    display: none;
-  }
-
-  .banner-block__description .page__title-h2-tel {
+    font-size: 25px;
+    line-height: 25px;
+    width: calc(200% - 30px);
+    font-family: "pala-Regular";
     text-align: center;
+    margin-left: calc(8.333333333333334% + 15px);
   }
 
   .banner-block__description .page__text {
     margin-left: calc(8.333333333333334% + 15px);
     text-align: center;
     margin-top: 20px;
+    width: calc(200% - 30px);
   }
 
   .banner-block__description .page__btn {
-    margin-left: calc(12.5% + 15px);
-    width: calc(50% - 30px);
+    margin-left: calc(8.333333333333334% + 15px);
+    width: calc(200% - 30px);
     margin-bottom: 15px;
+  }
+
+  .banner-block__description .page__text_very-small::after {
+    -webkit-transform: rotate(78deg);
+            transform: rotate(78deg);
+    bottom: -108px;
+    left: -155px;
   }
 
   .banner-block__description .page__text_very-small {
     margin-left: calc(25% + 15px);
-    width: calc(54.16666666666667% - 30px);
+    width: calc(200% - 30px);
     top: 0;
     left: 0;
     margin-top: 10px;
@@ -2404,6 +2414,13 @@ input:focus {
             transform: rotate(70deg);
     top: 106px;
     left: -63px;
+  }
+
+  .banner-block__img {
+    margin-right: calc(0% + 15px);
+    left: 30px;
+    width: calc(100% - 30px);
+    top: 0;
   }
 
   .tabs {

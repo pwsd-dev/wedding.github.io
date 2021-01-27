@@ -2360,7 +2360,8 @@ input:focus {
   }
 
   .banner-block__description .page__img_rose {
-    margin-left: 34.88333333%;
+    margin-left: 76.55%;
+    padding-top: 0;
   }
 
   .banner-block__description {
@@ -2370,28 +2371,37 @@ input:focus {
   }
 
   .banner-block__description .page__title-h2 {
-    display: none;
-  }
-
-  .banner-block__description .page__title-h2-tel {
+    font-size: 25px;
+    line-height: 25px;
+    width: 196.9%;
+    font-family: "pala-Regular";
     text-align: center;
+    margin-left: 9.88333333%;
   }
 
   .banner-block__description .page__text {
     margin-left: 9.88333333%;
     text-align: center;
     margin-top: 20px;
+    width: 196.9%;
   }
 
   .banner-block__description .page__btn {
-    margin-left: 14.05%;
-    width: 46.9%;
+    margin-left: 9.88333333%;
+    width: 196.9%;
     margin-bottom: 15px;
+  }
+
+  .banner-block__description .page__text_very-small::after {
+    -webkit-transform: rotate(78deg);
+            transform: rotate(78deg);
+    bottom: -108px;
+    left: -155px;
   }
 
   .banner-block__description .page__text_very-small {
     margin-left: 26.55%;
-    width: 51.06666667%;
+    width: 196.9%;
     top: 0;
     left: 0;
     margin-top: 10px;
@@ -2404,6 +2414,13 @@ input:focus {
             transform: rotate(70deg);
     top: 106px;
     left: -63px;
+  }
+
+  .banner-block__img {
+    margin-right: 1.55%;
+    left: 30px;
+    width: 96.9%;
+    top: 0;
   }
 
   .tabs {
