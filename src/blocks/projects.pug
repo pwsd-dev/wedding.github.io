@@ -3,8 +3,8 @@ mixin item(name)
         .page__img 
             img(src="assets/img/img-video-1.png")
             .page__toggles
-                button.page__icon.page__icon_photograph
-                button.page__icon.page__icon_videocamera
+                button.page__icon.page__icon_photograph.open-modal(data-modal="modal-testimonial")
+                button.page__icon.page__icon_videocamera.open-modal(data-modal="modal-testimonial")
             .page__text.name Антон и Юлия
         
 section#projects.projects

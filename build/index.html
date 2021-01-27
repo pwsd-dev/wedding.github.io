@@ -112,8 +112,8 @@
 												<div class="page__item">
 													<div class="page__img"> <img src="assets/img/img-video-1.png">
 														<div class="page__toggles">
-															<button class="page__icon page__icon_photograph"></button>
-															<button class="page__icon page__icon_videocamera"></button>
+															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
+															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
 														</div>
 														<div class="page__text name">Антон и Юлия</div>
 													</div>
@@ -121,8 +121,8 @@
 												<div class="page__item">
 													<div class="page__img"> <img src="assets/img/img-video-1.png">
 														<div class="page__toggles">
-															<button class="page__icon page__icon_photograph"></button>
-															<button class="page__icon page__icon_videocamera"></button>
+															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
+															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
 														</div>
 														<div class="page__text name">Антон и Юлия</div>
 													</div>
@@ -130,8 +130,8 @@
 												<div class="page__item">
 													<div class="page__img"> <img src="assets/img/img-video-1.png">
 														<div class="page__toggles">
-															<button class="page__icon page__icon_photograph"></button>
-															<button class="page__icon page__icon_videocamera"></button>
+															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
+															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
 														</div>
 														<div class="page__text name">Антон и Юлия</div>
 													</div>
@@ -139,8 +139,8 @@
 												<div class="page__item">
 													<div class="page__img"> <img src="assets/img/img-video-1.png">
 														<div class="page__toggles">
-															<button class="page__icon page__icon_photograph"></button>
-															<button class="page__icon page__icon_videocamera"></button>
+															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
+															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
 														</div>
 														<div class="page__text name">Антон и Юлия</div>
 													</div>
@@ -148,8 +148,8 @@
 												<div class="page__item">
 													<div class="page__img"> <img src="assets/img/img-video-1.png">
 														<div class="page__toggles">
-															<button class="page__icon page__icon_photograph"></button>
-															<button class="page__icon page__icon_videocamera"></button>
+															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
+															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
 														</div>
 														<div class="page__text name">Антон и Юлия</div>
 													</div>
@@ -290,7 +290,7 @@
 							<div class="page__items" id="feedbackSlider">
 											<div class="page__item">
 												<div class="page__img"> <img src="assets/img/img-video-prev.png">
-													<div class="page__icon page__icon_play"></div>
+													<div class="page__icon page__icon_play open-modal" data-modal="modal-testimonial"></div>
 												</div>
 												<div class="page__description">
 													<div class="page__text name">Юля и Егор</div>
@@ -299,7 +299,7 @@
 											</div>
 											<div class="page__item">
 												<div class="page__img"> <img src="assets/img/img-video-prev.png">
-													<div class="page__icon page__icon_play"></div>
+													<div class="page__icon page__icon_play open-modal" data-modal="modal-testimonial"></div>
 												</div>
 												<div class="page__description">
 													<div class="page__text name">Юля и Егор</div>
@@ -307,10 +307,8 @@
 												</div>
 											</div>
 							</div>
-							<div class="projects-btns">
-								<button class="projects-btn projects-btn_prev"></button>
-								<button class="projects-btn projects-btn_next"></button>
-							</div>
+							<button class="projects-btn projects-btn_prev"></button>
+							<button class="projects-btn projects-btn_next"></button>
 						</div>
 					</div>
 				</div>
@@ -507,9 +505,22 @@
 					</div>
 				</div>
 			</footer>
+			<section class="modal modal-testimonial page_hidden" id="modal-testimonial">
+				<div class="modal-container">
+					<div class="modal__action">
+						<button class="page__btn page__btn_close close-modal" data-modal="modal-testimonial"></button>
+					</div>
+					<div class="modal__content">
+						<div class="modal__content-block">
+							<video class="page__video" poster="assets/img/img-modal-testimonial.png" src=""></video>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/scroll-anchors.js"></script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>
