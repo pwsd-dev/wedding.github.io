@@ -1,8 +1,7 @@
 .banner {
     position: relative;
-    padding-bottom: 30px;
     overflow: hidden;
-   
+    
     &_bg{
         background-color: @color_light-pink;
         opacity: 0.2;
@@ -160,5 +159,17 @@
         font-size: 61px;
         line-height: 76px;
         .size(10);
+    }
+    &.animated{
+      
+        .animated({
+            .scale()
+        },1s);
+        .banner-block__description{
+            .animated({
+                .fadeIn();
+                .delay(1s);
+            });
+        }
     }
 }

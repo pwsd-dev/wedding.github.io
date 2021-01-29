@@ -29,6 +29,9 @@ if(document.getElementById('feedbackSlider')){
     });
 }
   
-//дальше копирую полностью конструкцию, вместе с циклом if
-
-
+let strs = document.querySelectorAll('.step-work-block-items-item .page__subtitle');
+if(strs){
+  strs.forEach((str)=>{
+    str.innerHTML = str.innerHTML.replace(/(^ ?|<br> ?|[!?.] .*?)([\wа-яё]+)/gim, '$1<span class="hl">$2</span>');
+  });
+}

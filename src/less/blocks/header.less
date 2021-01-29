@@ -5,14 +5,17 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #ffffff;
+    // background-color: #ffffff;
+    background-color: transparent;
     &-block {
         .row-flex();
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        align-items: center;
+        // flex-wrap: nowrap;
+        // justify-content: space-between;
         
         &__logo {
-            .size(2);
+            .col();
+            .size(1.7);
             .sm-block({
                 .size(12);
                 flex-wrap: nowrap;
@@ -21,63 +24,78 @@
         }
         
         &-links {
+            .col();
             .size(6);
+            margin-right: 0;
             font-family: "@{Montserrat}-Regular";
             font-size: 15px;
             color: #4d4d4d;
             .sm-block({
                 display: none;
             });
-            padding-top: 35px;
-            &__get-opros , &__portfolio , &__step-work , &__feedback , &__about {
-                padding-right: 30px;
+            .page__link{
+                // padding-right: 33px;
+                padding-right: 5.5%;
             }
+            // &__get-opros ,
+            //  &__portfolio , 
+            //  &__step-work , 
+            //  &__feedback ,
+            //  &__about {
+            //     padding-right: 30px;
+            // }
         }
 
         &__soc {
-            position: relative;
-            left: 40px;
+            .col();
+            .size(1.7);
+            margin-left: 0;
+            display: flex;
+            justify-content: space-around;
+
             .sm-block({
                 display: none;
             });
-            .row-flex();
-            padding-top: 27px;
-            .shift-left(-.5);
-            .size(2);
+            &-icon{
+                // margin: 0 15px;
+            }
+            
             &-whatsapp {
-                margin-right: 15px;
                 .sprite(@icon-nav-whatsapp);
-
+                &:hover{
+                    .sprite(@icon-nav-whatsapp-pink);
+                }
             }
             &-vk {
-                margin-right: 15px;
                 .sprite(@icon-nav-vk);
+                &:hover{
+                    .sprite(@icon-nav-vk-pink);
+                }
             }
             &-instagram {
-                margin-right: 15px;
                 .sprite(@icon-nav-instagram);
+                &:hover{
+                    .sprite(@icon-nav-instagram-pink);
+                }
             }
         }
 
         &__call {
-            .shift-left(.5);
+            
+            .col();
+            .size(3);
+            display: flex;
+            justify-content: center;
+            margin-right: 0;
             .sm-block({
                 //display: flex;
             });
-            padding-top: 18px;
 
             .page__btn-call {
+                margin: 0;
                 .sm-block({
                     display: none;
                 });
-                &_tel {
-                    display: none;
-                    .sprite(@icon-call-tel);
-                    .sm-block({
-                        display: block;
-                        .shift-left(-24);
-                    })
-                }
             }
         }
 

@@ -1,7 +1,7 @@
 mixin item(name)
     .page__item
         .page__img 
-            img(src="assets/img/img-video-1.png")
+            img.open-modal(src="assets/img/img-video-1.png", data-modal="modal-testimonial")
             .page__toggles
                 button.page__icon.page__icon_photograph.open-modal(data-modal="modal-testimonial")
                 button.page__icon.page__icon_videocamera.open-modal(data-modal="modal-testimonial")
@@ -22,6 +22,5 @@ section#projects.projects
                             +item()
                             +item()
                             +item()
-                .projects-btns
-                    button.projects-btn.projects-btn_prev
-                    button.projects-btn.projects-btn_next 
+                button.projects-btn.projects-btn_prev
+                button.projects-btn.projects-btn_next 

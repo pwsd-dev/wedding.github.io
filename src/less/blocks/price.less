@@ -1,7 +1,16 @@
 .price {
-    background-image: url(../assets/img/img-bg-price.png);
-    padding-top: 90px;
+    // background-image: url(../assets/img/img-bg-price.png);
+    padding-top: 60px;
     padding-bottom: 80px;
+    position: relative;
+    &_bg{
+        position: absolute;
+        top: 0;
+        width: 60%;
+        height: 100%;
+        background-color: @color_light-pink;
+        opacity: 0.4;
+    }
     overflow: hidden;
     .sm-block({
        background-image: none;
@@ -16,59 +25,60 @@
             background-color: rebeccapurple;
         }
         &-img {
-            
+            position: relative;
+            z-index: 10;
             &__img {
-                .page__img {
-                    .size(12);
-                    z-index: 170;
-                    position: relative;
-                    .sm-block({
-                        order: 0;
-                        .size(11);
-                        padding-top: 28px;
-                        .shift-left(.5);
-                    });
-                }
+                
+            }
+            .page__img {
+                // .size(12);
+                // z-index: 170;
+                // position: relative;
+                .sm-block({
+                    order: 0;
+                    .size(11);
+                    padding-top: 28px;
+                    .shift-left(.5);
+                });
             }
         }
 
         &-description {
-            .size(5);
+            .size(8);
+            .shift-left(-1.8);
+            .shift-right(-3);
+            margin-top: 45px;
+            padding: 5% 3% 5% 19%;
+            box-sizing: border-box;
             position: relative;
-            z-index: 120;
+            background-color: @color_white;
+            border-radius: 25px;
+            box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
+            &::before,
+            &::after{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+            &::before{
+                background-image: url(../assets/img/img-price-leafs-2.png);
+                top: -133px;
+                left: 24%;
+            }
+            &::after{
+                background-image: url(../assets/img/img-price-leafs-1.png);
+                top: 38%;
+                left: 72%;
+            }
             .page__img {
                 .sm-block({
                     padding-left: 15px;
                 });
             }
-
-            &__bg {
-                background-color: @color_white;
-                position: absolute;
-                width: 725px;
-                height: 500px;
-                right: -89px;
-                top: -46px;
-                z-index: -20;
-                border-radius: 25px;
-                box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
-
-            }
-            .sm-block({
-                order: -1;
-                top: 0;
-                left: 0;
-                .shift-left(.7);
-                background-color: @color_white;
-                padding-top: 30px;
-                border-radius: 25px;
-                width: 300px;
-
-                 
-            });
-            position: relative;
-            top: 120px;
-            left: 20px;
             .page__title-h2 {
                 padding-bottom: 30px;
                 .sm-block({
@@ -84,37 +94,18 @@
                 font-family: "@{Montserrat}-Regular";
                 font-size: 16px;
                 line-height: 20px;
-                .size(10);
-                .sm-block({
-                    .size(12);
-                    padding-left: 15px;
-                });
-                &_padding-left {
-                    padding-left: 35px;
+                &_after {
+                    padding-left: 40px;
+                    padding-top: 15px;
                     font-family: "@{Montserrat}-Regular";
-                    font-size: 14px;
+                    font-size: 13px;
+                    line-height: 16px;
                     color: #575757;
-                    position: relative;
-                    left: 35px;
-                    .sm-block({
-                        .size(24);
-                        //.shift-left(.0);
-                        font-size: 14px;
-                        margin-bottom: 30px;
-                        
-                    });
                 }
             }
 
             .page__btn {
-                .size(6);
-                .sm-block({
-                    .size(7);
-                    .shift-left(.1);
-                    font-size: 10px;
-                    
-                });
-                margin-bottom: 20px;
+                .size(4.5);
             }
         }
     }

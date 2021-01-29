@@ -1,51 +1,80 @@
 .footer {
     overflow: hidden;
-    padding-bottom: 30px;
-    .sm-block({
-        padding-bottom: 30px;
-    });
     &-block {
         .row-flex();
-        justify-content: space-between;
         &-logo-descr {
-            .row-flex();
-            //flex-wrap: nowrap;
-            .sm-block({
-                flex-direction: column;
-            });
-            .page__img {
-                //.shift-left(3.7);
-                .sm-block({
-                    .shift-left(3.7);
-                });
+            .size(7.3);
+            display: flex;
+            align-items: center;
+            .page__text_very-small {
+               margin-left: 3%;
+               .size(7);
             }
-                .page__text_very-small {
-                    .size(6);
-                    .shift-left(1);
-                    .sm-block({
-                        text-align: center;
-                        .shift-left(2.9);
-                    });
-                    margin-top: 30px;
-                }
         }
 
-        &-soc-call {
-            .row-flex();
-            //.shift-left(2);
-            .sm-block({
-                .shift-left(3.5);
-            });
-            .page__btn-call {
-                margin-top: 20px;
-                margin-left: 20px;
-                .sm-block({
-                    .shift-left(-3);
-                });
-            }
+        &__soc {
+            .col();
+            .size(1.7);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
 
-            .header-block__soc-whatsapp, .header-block__soc-vk, .header-block__soc-instagram {
-                margin-top: 30px;
+            .sm-block({
+                display: none;
+            });
+            &-icon{
+                // margin: 0 15px;
+            }
+            
+            &-whatsapp {
+                .sprite(@icon-nav-whatsapp);
+                &:hover{
+                    .sprite(@icon-nav-whatsapp-pink);
+                }
+            }
+            &-vk {
+                .sprite(@icon-nav-vk);
+                &:hover{
+                    .sprite(@icon-nav-vk-pink);
+                }
+            }
+            &-instagram {
+                .sprite(@icon-nav-instagram);
+                &:hover{
+                    .sprite(@icon-nav-instagram-pink);
+                }
+            }
+            
+        }
+        &__call{
+            .col();
+            .size(3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0;
+            .sm-block({
+                //display: flex;
+            });
+
+            .page__btn-call {
+                color: @color_white;
+                background-color: @color_pink;
+                
+                &::before {
+                    .sprite(@icon-nav-call-white);
+                }
+                &:hover{
+                    color: @color_pink;
+                    background-color:@color_white;
+                    &::before {
+                        .sprite(@icon-nav-call);
+                    }
+                }
+                margin: 0;
+                .sm-block({
+                    display: none;
+                });
             }
         }
     }

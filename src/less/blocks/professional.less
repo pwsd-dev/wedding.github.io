@@ -1,7 +1,18 @@
 .professional {
     overflow: hidden;
+    position: relative;
+    &_bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 59%;
+        height: 100%;
+        background-color: #fee2d9;
+        opacity: 0.4;
+    }
     &-block {
-        padding-top: 130px;
+        padding-top: 95px;
+
         padding-bottom: 50px;
         .row-flex();
         .sm-block({
@@ -9,66 +20,61 @@
             padding-bottom: 15px;
         });
         &-description-profile {
-            .size(4);
+            .size(6);
+            align-self: flex-start;
+            padding: 6% 8% 4% 3%;
+            box-sizing: border-box;
             position: relative;
+            background-color: @color_white;
+            border-radius: 15px;
+            margin-top: 36px;
+            box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
             .sm-block({
                 .size(9);
                 .shift-left(1);
                 
             });
-
-            &__bg {
-                background-color: @color_white;
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
                 position: absolute;
-                z-index: -40;
-                width: 467px;
-                height: 440px;
-                left: -30px;
-                top: -38px;
-                border-radius: 25px;
-                box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
             }
-            //background-color: @color_white;
-            z-index: 20;
+            &::before {
+                left: 33%;
+                bottom: 36%;            
+                background-image: url(../assets/img/img-professional-flower-before.png);
+            }
+            &::after {
+                top: 63%;
+                right: 22%;
+                opacity: 0.3;
+                background-image: url(../assets/img/img-professional-flower-after.png);
+            }
             .page__title-h2 {
+                font-size: 50px;
+                line-height: 60px;
+                margin-bottom: 50px;
                 .sm-block({
                     font-size: 25px;
                     
                 });
-                margin-bottom: 40px;
                 position: relative;
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    position: absolute;
-                    background-image: url(../assets/img/img-professional-flower-before.png);
-                    background-repeat: no-repeat;
-                    width: 335px;
-                    height: 290px;
-                    top: -235px;
-                    left: 174px;
-                    z-index: -50;
-                }
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    position: absolute;
-                    background-image: url(../assets/img/img-professional-flower-after.png);
-                    background-repeat: no-repeat;
-                    width: 335px;
-                    height: 290px;
-                    top: 180px;
-                    left: -176px;
-                    z-index: -50;
-                    opacity: 0.3;
-                }
+               
             }
 
             .page__text_small-pink {
                 margin-bottom: 15px;
                 text-transform: uppercase;
                 font-family: "@{Montserrat}-Regular";
+                font-weight: 600;
                 font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
                 .sm-block({
                     text-transform: uppercase;
                     
@@ -79,7 +85,7 @@
                 font-family: "@{Montserrat}-Regular";
                 font-size: 16px;
                 line-height: 20px;
-                
+                font-weight: 600;
                 .size(14);
                 .sm-block({
                     .size(7);
@@ -90,33 +96,40 @@
 
         &-img-center {
             .size(3);
+            .shift-left(-1.8);
             position: relative;
-            z-index: 300;
             .page__img {
-                padding-left: 40px;
-                .sm-block({
-                    position: absolute;
-                    .size(4.5);
-                    left: 187px;
-                    /* top: -26px; */
-                    bottom: -8135px;
-                    z-index: 50;
+                // .sm-block({
+                //     position: absolute;
+                //     .size(4.5);
+                //     left: 187px;
+                //     /* top: -26px; */
+                //     // bottom: -8135px; WTF???? -8135px Oo Oo
+                //     z-index: 50;
                     
-                });
+                // });
             }
         }
 
         &-description-right {
             .size(5);
+            // .shift-right(-2);
             .sm-block({
                 .size(10);
                 padding-left: 45px;
             });
-            padding-left: 90px;
-            padding-top: 30px;
+            padding-left: 10%;
+            padding-top: 43px;
+            box-sizing: border-box;
             .page__text_small-pink {
+
+                font-family: "@{Montserrat}-Regular";
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
                 margin-bottom: 15px;
                 font-weight: bold;
+                letter-spacing: 0.03em;
                 position: relative;
                 &::before {
                     content: '';
@@ -133,11 +146,11 @@
             }
 
             .page__text_very-small {
+                font-family: "@{Montserrat}-Regular";
                 margin-bottom: 26px;
-                .sm-block({
-                    position: relative;
-                    
-                });
+                font-size: 16px;
+                line-height: 20px;
+                
             }
         }
     }

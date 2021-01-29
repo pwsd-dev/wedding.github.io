@@ -37,3 +37,12 @@ input{
       outline: none;
   }
 }
+
+html {
+  // scroll-behavior: smooth;
+  &:not([data-scroll='0']) {
+    .header {
+      background: @color_white;
+    }
+  }
+}

@@ -1,8 +1,7 @@
 section.form
+    .form_bg
     .wrapper
         .form-block
-            .form-block__bg_pink
-            .form-block__bg_white
             .form-block-img
                 .page__img
                     img(src="assets/img/img-form.png")
@@ -12,6 +11,6 @@ section.form
                 h2.page__title-h2 Консультация с организатором
                 .page__text_very-small Ответим на все вопросы по организации свадьбы в Крыму
                 form(action="")
-                    input.place(type="text" placeholder="Имя")
-                    input.place(type="text" placeholder="Телефон")
-                .page__btn Консультация
+                    input.place(type="text" placeholder="Имя" required )
+                    input.place(type="tel" placeholder="Телефон" required )
+                    button.page__btn Консультация

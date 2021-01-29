@@ -1,15 +1,16 @@
 .projects {
     overflow: hidden;
+    padding-top: 30px;
     padding-bottom: 90px;
     .wrapper {
         overflow: hidden;
+        max-width: 1280px;
     }
     &-block {
         &__img {
             .page__img {
                 margin: 0 auto;
-                margin-top: 80px;
-                margin-bottom: 20px;
+                
                 
             }
         }
@@ -21,6 +22,9 @@
         }
 
         .page__title-h2 {
+            line-height: 67px;
+            margin-top: 10px;
+            margin-bottom: 25px;
             .sm-block({
                 font-size: 25px;
         
@@ -29,6 +33,7 @@
 
         &__slider {
             position: relative;
+            padding: 0 40px;
             &-content{
                 .size(4.5);
                 margin: 0 auto;
@@ -47,6 +52,7 @@
                     display: inline-flex !important;
                     align-items: center;
                     flex-wrap: wrap;
+                   
 
                     &.tns-slide-active{
                         .page__img {
@@ -54,6 +60,11 @@
                             // max-height: 352px;
                             // transform: scale(1.35);
                             transform: scale(1.1);
+                            
+                            &::before,
+                            &::after{
+                                background:transparent;
+                            }
                         }
                         .page__text{
                             color:  @color_pink;;
@@ -61,12 +72,26 @@
                         .page__toggles{
                             
                             transform: scale(1);
-                            top: 8px;
-                            right: 16px;
+                            top: 15px;
+                            right: 18px;
+                        }
+                        + .page__item {
+                            .page__img{
+                                &::before{
+                                    background: transparent;
+                                }
+                                &::after{
+                                    content: '';
+                                    right: 0;
+                                    top: 0;
+                                }
+                            }
+                            
                         }
                        
                     }
                     .page__img {
+                        cursor: pointer;
                         position: relative;
                         margin: 0 auto;
                         transition: all .5s ease-out;
@@ -75,6 +100,21 @@
                         max-height: 352px;
                         // max-width: 335px;
                         // max-height: 258.25px;
+                        &::before,
+                        &::after{
+                            
+                            background:  linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 76.28%);
+                            height: 100%;
+                            width: 100px;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                        &::before{
+                            content: '';
+                            left: -5px;
+                            transform: rotate( 180deg );
+                        }
+                        
                     }
                     .page__text{
                         font-size: 20px;
@@ -85,10 +125,10 @@
                     }
                     .page__toggles{
                         transition: all .5s ease-out;
-                        transform: scale(.5);
+                        transform: scale(0.6);
                         position: absolute;
-                        top: 0;
-                        right: 0px;
+                        top: 10px;
+                        right: -6px;
                     
                        
                         .page__icon{
@@ -108,39 +148,45 @@
         }
 
         .projects-btns {
+            
+           
+        }
+        .projects-btn{
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+            width: 56px;
+            height: 56px;
+            background-color: @color_light-pink;
+            border-radius: 50%;
+            border: none;
             display: flex;
-            justify-content: space-between;
-            .projects-btn{
-                width: 56px;
-                height: 56px;
-                background-color: @color_light-pink;
-                border-radius: 50%;
-                border: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                &_prev,
-                &_next{
-                    &::after{
-                        display: inline-block;
-                        content: '';
-                        .sprite(@icon-chevron);
-                    }
-                    
+            justify-content: center;
+            align-items: center;
+            &_prev,
+            &_next{
+                &::after{
+                    display: inline-block;
+                    content: '';
+                    .sprite(@icon-chevron);
                 }
-                &_prev{
-                    position: relative;
-                    left: -10px;
-                }
-                &_next{
-                    position: relative;
-                    right: -10px;
-                    transform: rotate(180deg);
-                }
+                
+            }
+            &_prev{
+                // position: relative;
+                left: -10px;
+                top: 46%;
+            }
+            &_next{
+                // position: relative;
+                right: -15px;
+                top: 39%;
+
+                transform: rotate(180deg);
             }
         }
     }

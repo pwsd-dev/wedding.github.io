@@ -74,10 +74,16 @@
 
             text-decoration: none;
             font-family: "@{Montserrat}-Regular";
+          
+           
             font-size: 15px;
+            line-height: 18px;
+            font-weight: 500;
             color: @color_gray-2;
-            
-            
+            transition: all .5s ease-out;
+            &:hover{
+                color: @color_pink-dark;
+            }
             &-step-work {
                 text-decoration: none;
                 font-family: "@{Montserrat}-Regular";
@@ -99,77 +105,76 @@
     }
 
     &__btn {
+        cursor: pointer;
         border: none;
-        padding: 24px 62px 26px;
+        text-decoration: none;
+        font-family: "@{Montserrat}-Regular";
+        text-transform: uppercase;
+        color: @color_white;
+        background-color: @color_pink;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 16px;
         line-height: 20px;
         border-radius: 49px;
-
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        
-
+        padding: 0 62px ;
+        height: 70px;
         letter-spacing: 0.03em;
-        
-        font-family: "@{Montserrat}-Regular";
-        text-transform: uppercase;
-        // border: 2px solid @color_pink;
-        color: @color_white;
-        background-color: @color_pink;
-    
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            right: 10%;
-            .sprite(@icon-strelka);
-            margin-left: 10px;
-            color: @color_white;
-            opacity: 0;
-        }
-        &:hover {
-            transition: all ease-out 0.5s;
-            background-color: @color_pink-dark;
+        transition: all ease-out 0.1s;
+        &_arrow{
             &::after {
-                opacity: 1;
+                content: '';
+                position: absolute;
+                right: 10%;
+                .sprite(@icon-strelka);
+                margin-left: 10px;
+                color: @color_white;
+                opacity: 0;
+                transition: all ease-out 0.35s;
+            }
+            &:hover{
+                &::after {
+                    opacity: 1;
+                }
             }
         }
+        
+        &:hover {
+            // transition: all ease-out 0.5s;
+            background-color: @color_pink-dark;
+            
+        }
+        &:active{
+            // height: 76px;
+            transform: scale(1.04);
+        }
         &-call {
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-
-            border-radius: 25px;
-            height: 45px;
-            font-size: 14px;
-            letter-spacing: 1px;
-            line-height: 30px;
-            font-family: "@{Montserrat}-Regular";
-            text-transform: uppercase;
-            border: 2px solid @color_pink;
             color: @color_pink;
             background-color: transparent;
-            padding-left: 25px;
-            padding-right: 25px;
+            border: 2px solid @color_pink;
+
+            height: 45px;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 0 25px;
+            border-radius: 25px;
+           
+            
             &::before {
                 content: '';
                 .sprite(@icon-nav-call);
                 margin-right: 10px;
             }
             &:hover {
-                transition: all ease-out 0.5s;
-                background-color: @color_pink;
                 color: @color_white;
+                background-color: @color_pink;
+              
                 &::before {
-                    content: '';
                     .sprite(@icon-nav-call-white);
-                    margin-right: 10px;
-                    color: @color_white;
                 }
             }
             

@@ -1,96 +1,62 @@
 .form {
-    //background-image: url(../assets/img/form-bg.png);
-    background-repeat: no-repeat;
+    padding-top: 172px;
     padding-bottom: 127px;
-    overflow: hidden;
-    .sm-block({
-       background-position: right;
-       padding-bottom: 60px;
-    });
+    position: relative;
+   
+    &_bg{
+        opacity: 0.3;
+        position: absolute;
+        background-color: @color_light-pink;
+        width: 58%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
     &-block {
-        position: relative;
-        &__bg_pink {
-            position: absolute;
-            background-color: @color_light-pink;
-            width: 1300px;
-            height: 900px;
-            z-index: -170;
-            left: 500px;
-            top: -100px;
-            border-radius: 25px;
-        }
-        &__bg_white {
-            position: absolute;
-            width: 1150px;
-            height: 544px;
-            top: 56px;
-            z-index: -150;
-            left: 85px;
-            background-color: #fff;
-            border-radius: 25px;
-            box-shadow: 0px 10.7632px 14.6772px rgba(0, 0, 0, 0.03);
-            &::before {
-                content: '';
-                position: absolute;
-                display: inline-block;
-                background-image: url(../assets/img/img-form-vetka-1.png);
-                width: 440px;
-                height: 400px;
-                background-repeat: no-repeat;
-                z-index: -1000;
-                top: -168px;
-                //transform: rotate(40deg);
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                display: inline-block;
-                background-image: url(../assets/img/img-form-vetka-2.png);
-                width: 440px;
-                height: 400px;
-                background-repeat: no-repeat;
-                top: 425px;
-                left: -150px;
-                //transform: rotate(40deg);
-            }
-        }
-        padding-top: 100px;
-        .sm-block({
-            padding-top: 50px;
-         });
         .row-flex();
-        flex-wrap: nowrap;
-        .sm-block({
-            flex-direction: column;
-        });
+        position: relative;
+        background-color: @color_white;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        padding: 60px 19px;
+        box-sizing: border-box;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        &::before {
+            background-image: url(../assets/img/img-form-vetka-1.png);
+            bottom: 33%;
+            left: 5%;
+        }
+        &::after {
+            content: '';
+            background-image: url(../assets/img/img-form-vetka-2.png);
+            top: 74%;
+            right: 12%;
+        }
+       
+        
         &-img {
-            .shift-left(1);
-            .page__img {
-                .size(17);
-                .sm-block({
-                    .size(12);
-                    .shift-left(-1);
-                });
-            }
+            .col();
+            .size(5.8);
+            padding-top: 48px;
         }
 
         &-form {
-            .shift-left(2);
-            .sm-block({
-                .shift-left(1);
-            });
-            //padding-left: 40px;
+            .col();
+            .size(6);
             .page__btn {
-                .size(3);
-                height: 10px;
-                .sm-block({
-                    .size(6);
-                    .shift-left(-.1);
-                });
             }
 
             .page__title-h2 {
-                margin-bottom: 20px;
+                margin-bottom: 36px;
                 .sm-block({
                     font-size: 25px;
                     //padding-left: 0;
@@ -98,34 +64,31 @@
             }
 
             .page__text_very-small {
+                .size(9);
                 margin-bottom: 30px;
-                .sm-block({
-                    .size(10);
-                    margin-bottom: 20px;
-                });
+                font-size: 16px;
+                line-height: 20px;
             }
 
             form { 
                 display: flex;
                 flex-direction: column;
-                .size(7.5);
-                .sm-block({
-                    .size(10);
-                   
-                });
+                .size(9);
                 input {
                     margin-bottom: 20px;
-                    border: none;
-                    border: 1px solid #b2b2b2;
-                    height: 40px;
-                    border-radius: 25px;
-                }
-
-                .place {
+                    border: 1px solid #B3B3B3;
+                    box-sizing: border-box;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+                    border-radius: 49px;;
+                    margin-bottom: 18px;
+                    height: 56px;
                     font-family: "@{Montserrat}-Regular";
                     font-size: 14px;
                     color: @color_light-gray;
                     padding-left: 15px;
+                }
+                .page__btn{
+                    .size(10);
                 }
             }
         }

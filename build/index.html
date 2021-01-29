@@ -11,32 +11,27 @@
 		<div class="page">
 			<header class="header">
 				<div class="wrapper">
-					<nav>
-						<div class="header-block">
-							<div class="header-block__logo"><a href="/">
-									<div class="page__img"><img src="assets/img/img-logo-nav.png"></div></a></div>
-							<div class="header-block-links"><a class="page__link header-block-links__get-opros" href="#banner">Пройти опрос</a><a class="page__link header-block-links__portfolio" href="#projects">Портфолио</a><a class="page__link header-block-links__step-work" href="#step-work">Этапы работ</a><a class="page__link header-block-links__feedback" href="#slider-feedback">Отзывы</a><a class="page__link header-block-links__about" href="#professional">О нас</a></div>
-							<div class="header-block__soc">
-								<div class="header-block__soc-whatsapp"></div>
-								<div class="header-block__soc-vk"></div>
-								<div class="header-block__soc-instagram"></div>
-							</div>
-							<div class="header-block__call">
-								<button class="page__btn-call">перезвоните мне</button>
+					<nav class="header-block">
+						<div class="header-block__logo"><a href="/"><img class="page__img" src="assets/img/img-logo-nav.png"></a></div>
+						<div class="header-block-links"><a class="page__link header-block-links__get-opros" href="#banner">Пройти опрос</a><a class="page__link header-block-links__portfolio" href="#projects">Портфолио</a><a class="page__link header-block-links__step-work" href="#step-work">Этапы работ</a><a class="page__link header-block-links__feedback" href="#slider-feedback">Отзывы</a><a class="page__link header-block-links__about" href="#professional">О нас</a></div>
+						<div class="header-block__soc"><a class="header-block__soc-icon header-block__soc-whatsapp" href="#"></a><a class="header-block__soc-icon header-block__soc-vk" href="#"></a><a class="header-block__soc-icon header-block__soc-instagram" href="#"></a></div>
+						<div class="header-block__call">
+							<button class="page__btn page__btn-call">перезвоните мне
 								<div class="page__btn-call_tel"></div>
-							</div>
+							</button>
 						</div>
+						<div class="header-block__menu page_mobile"></div>
 					</nav>
 				</div>
 			</header>
-			<section class="banner" id="banner">
+			<section class="banner isAnimate" id="banner">
 				<div class="banner_bg"></div>
 				<div class="wrapper">
 					<div class="banner-block">
 						<div class="banner-block__description"><img class="page__img_rose" src="assets/img/img-rose.png">
 							<h2 class="page__title-h2">Организация вашей свадьбы в Крыму</h2>
 							<p class="page__text">Твоя идеальная свадьба, как арт-проект вашей истории любви</p>
-							<button class="page__btn">Узнать больше</button>
+							<button class="page__btn page__btn_arrow">Узнать больше</button>
 							<p class="page__text_very-small">Пройди опрос и получи индивидуальный арт проект с расчетом стоимости</p>
 						</div>
 						<div class="banner-block__img">
@@ -96,7 +91,7 @@
 				<div class="video_bg"></div>
 				<div class="wrapper">
 					<div class="video-block">
-						<video class="page__video" poster="assets/img/img-video-zaglushka.png" src=""></video>
+						<iframe class="page__video" src="https://www.youtube.com/embed/n-M2R28lw88" frameborder="0" allowfullscreen> </iframe>
 					</div>
 				</div>
 			</section>
@@ -110,7 +105,7 @@
 							<div class="projects-block__slider-content">
 								<div class="page__items" id="projectsSlider">
 												<div class="page__item">
-													<div class="page__img"> <img src="assets/img/img-video-1.png">
+													<div class="page__img"> <img class="open-modal" src="assets/img/img-video-1.png" data-modal="modal-testimonial">
 														<div class="page__toggles">
 															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
 															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
@@ -119,7 +114,7 @@
 													</div>
 												</div>
 												<div class="page__item">
-													<div class="page__img"> <img src="assets/img/img-video-1.png">
+													<div class="page__img"> <img class="open-modal" src="assets/img/img-video-1.png" data-modal="modal-testimonial">
 														<div class="page__toggles">
 															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
 															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
@@ -128,7 +123,7 @@
 													</div>
 												</div>
 												<div class="page__item">
-													<div class="page__img"> <img src="assets/img/img-video-1.png">
+													<div class="page__img"> <img class="open-modal" src="assets/img/img-video-1.png" data-modal="modal-testimonial">
 														<div class="page__toggles">
 															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
 															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
@@ -137,7 +132,7 @@
 													</div>
 												</div>
 												<div class="page__item">
-													<div class="page__img"> <img src="assets/img/img-video-1.png">
+													<div class="page__img"> <img class="open-modal" src="assets/img/img-video-1.png" data-modal="modal-testimonial">
 														<div class="page__toggles">
 															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
 															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
@@ -146,7 +141,7 @@
 													</div>
 												</div>
 												<div class="page__item">
-													<div class="page__img"> <img src="assets/img/img-video-1.png">
+													<div class="page__img"> <img class="open-modal" src="assets/img/img-video-1.png" data-modal="modal-testimonial">
 														<div class="page__toggles">
 															<button class="page__icon page__icon_photograph open-modal" data-modal="modal-testimonial"></button>
 															<button class="page__icon page__icon_videocamera open-modal" data-modal="modal-testimonial"></button>
@@ -156,24 +151,22 @@
 												</div>
 								</div>
 							</div>
-							<div class="projects-btns">
-								<button class="projects-btn projects-btn_prev"></button>
-								<button class="projects-btn projects-btn_next"> </button>
-							</div>
+							<button class="projects-btn projects-btn_prev"></button>
+							<button class="projects-btn projects-btn_next"> </button>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="price">
+				<div class="price_bg"></div>
 				<div class="wrapper">
 					<div class="price-block">
-						<div class="price-block-img__img"><img class="page__img" src="assets/img/img-price.png"></div>
-						<div class="price-block-description">
-							<div class="price-block-description__bg"></div><img class="page__img" src="assets/img/img-rose.png">
+						<div class="price-block-img"><img class="page__img" src="assets/img/img-price.png"></div>
+						<div class="price-block-description"><img class="page__img" src="assets/img/img-rose.png">
 							<h2 class="page__title-h2">Сколько стоит свадьба в Крыму?</h2>
 							<p class="page__text_small">Пройдите мини-опрос, где вы опишите пожелания и узнаете предварительную стоимость свадьбы.</p>
 							<div class="page__btn">Пройти опрос</div>
-							<p class="page__text_small_padding-left">Займет не более 3-4 минут</p>
+							<p class="page__text_small_after">Займет не более 3-4 минут</p>
 						</div>
 					</div>
 				</div>
@@ -186,11 +179,11 @@
 						<div class="step-work-block-items">
 										<div class="step-work-block-items-item">
 											<div class="page__img"><img src="assets/img/img-bg-contract.png">
-												<h4 class="page__subtitle">Консультация, встречи, менеджмент</h4>
+												<h4 class="page__subtitle">Консультация встречи, менеджмент</h4>
 												<div class="page__link">Узнать больше</div>
 											</div>
 											<div class="page__description">
-												<h4 class="page__subtitle">Консультация, встречи, менеджмент</h4>
+												<h4 class="page__subtitle">Консультация встречи, менеджмент</h4>
 												<p class="page__text">Включают рассказ влюблённых о своей мечте, подробный разбор приоритетов исходя из пожеланий, консультации по форматам свадебного торжества, по местам проведения, по стилям, формированию свадебного бюджета и предварительное согласование сметы.</p>
 											</div>
 										</div>
@@ -315,10 +308,10 @@
 				</div>
 			</section>
 			<section class="professional" id="professional">
+				<div class="professional_bg"></div>
 				<div class="wrapper">
 					<div class="professional-block">
 						<div class="professional-block-description-profile">
-							<div class="professional-block-description-profile__bg"></div>
 							<div class="professional-block-description-profile__img"><img class="page__img" src="assets/img/img-rose.png"></div>
 							<h2 class="page__title-h2">Ваша свадьба в руках профессионалов</h2>
 							<p class="page__text_small-pink">Алексей Редкевич</p>
@@ -343,8 +336,7 @@
 				<div class="wrapper">
 					<div class="ten-professionals-block">
 						<div class="ten-professionals-block__img"><img class="page__img" src="assets/img/img-rose.png"></div>
-						<h2 class="page__title-h2">Над вашей свадьбой будут трудиться</h2>
-						<h2 class="page__title-h2">более 10 лучших профессионалов:</h2>
+						<h2 class="page__title-h2">Над вашей свадьбой будут трудиться более 10 лучших профессионалов:</h2>
 						<div class="ten-professionals-block-items">
 							<div class="ten-professionals-block-items__item">Организаторы<br> и координаторы</div>
 							<div class="ten-professionals-block-items__item">Декоратор<br> и флорист</div>
@@ -368,13 +360,10 @@
 				<div class="wrapper">
 					<div class="city-block">
 						<div class="city-block-description">
-							<div class="city-block-description">
-								<div class="page__img"><img src="assets/img/img-rose.png"></div>
-								<h2 class="page__title-h2">Хочешь свадьбу в Крыму, </h2>
-								<h2 class="page__title-h2">но из другого города?</h2>
-								<p class="page__text_small">Мы проводим множество свадеб с молодоженами не жителями полуострова и уже выработали для этого оптимальную стратегию.</p>
-								<p class="page__text_small">Дистанционная работа с влюблёнными – процесс организации свадьбы с вашим вовлечением удаленно, с экономией вашего времени на высоком уровне, гарантия по договору, защита пары от форс-мажоров.</p>
-							</div>
+							<div class="page__img"><img src="assets/img/img-rose.png"></div>
+							<h2 class="page__title-h2">Хочешь свадьбу в Крыму, но из другого города?</h2>
+							<p class="page__text_small">Мы проводим множество свадеб с молодоженами не жителями полуострова и уже выработали для этого оптимальную стратегию.</p>
+							<p class="page__text_small">Дистанционная работа с влюблёнными – процесс организации свадьбы с вашим вовлечением удаленно, с экономией вашего времени на высоком уровне, гарантия по договору, защита пары от форс-мажоров.</p>
 						</div>
 						<div class="city-block-img">
 							<div class="page__img"><img src="assets/img/img-city-right-2.png"></div>
@@ -387,7 +376,7 @@
 					<div class="basis-block">
 						<div class="basis-block-description">
 							<p class="page__text_small-pink">База лучших Крымских площадок и вилл</p>
-							<p class="page__text_very-small">Полная информация о крымских площадках: о стоимостях, достоинствах и недостатках, работе кухни, фото и видео, размещении гостей и прочих нюансах, позволяющих принять лучшее решение.</p>
+							<p class="page__text_very-small">Полная информация о крымских площадках: <br> о стоимостях, достоинствах и недостатках, работе кухни, фото и видео, размещении гостей и прочих нюансах, позволяющих принять лучшее решение.</p>
 							<p class="page__text_small-pink">Идеальная команда подрядчиков</p>
 							<p class="page__text_very-small">Широкий выбор специалистов команды, топовых экспертов, известных в Крыму и за его пределами. Мы раскроем секреты преимуществ предлагаемых специалистов, которые подбираются в зависимости от концепции проекта.</p>
 						</div>
@@ -433,10 +422,9 @@
 				</div>
 			</section>
 			<section class="form">
+				<div class="form_bg"></div>
 				<div class="wrapper">
 					<div class="form-block">
-						<div class="form-block__bg_pink"></div>
-						<div class="form-block__bg_white"></div>
 						<div class="form-block-img">
 							<div class="page__img"><img src="assets/img/img-form.png"></div>
 						</div>
@@ -445,10 +433,10 @@
 							<h2 class="page__title-h2">Консультация с организатором</h2>
 							<div class="page__text_very-small">Ответим на все вопросы по организации свадьбы в Крыму</div>
 							<form action="">
-								<input class="place" type="text" placeholder="Имя">
-								<input class="place" type="text" placeholder="Телефон">
+								<input class="place" type="text" placeholder="Имя" required>
+								<input class="place" type="tel" placeholder="Телефон" required>
+								<button class="page__btn">Консультация</button>
 							</form>
-							<div class="page__btn">Консультация</div>
 						</div>
 					</div>
 				</div>
@@ -461,33 +449,27 @@
 						<div class="materials-block-items">
 							<div class="materials-block-items__item">
 								<div class="page__text_small">Пошаговый план подготовки</div>
-								<div class="page__text_very-small">Инструкция и чек-лист поможет вам ничего не упустить при подготовке</div>
-								<div class="page__text_very-small_pink">Получить pdf файл</div>
+								<div class="page__text_very-small">Инструкция и чек-лист поможет вам ничего не упустить при подготовке</div><a class="page__text_very-small_pink" href="#" dowload>Получить pdf файл</a>
 							</div>
 							<div class="materials-block-items__item">
 								<div class="page__text_small">Как сэкономить свадебный бюджет до 30%</div>
-								<div class="page__text_very-small">Основы формирования свадебного бюджета, способы его экономии и частые ошибки</div>
-								<div class="page__text_very-small_pink">Получить pdf файл</div>
+								<div class="page__text_very-small">Основы формирования свадебного бюджета, способы его экономии и частые ошибки</div><a class="page__text_very-small_pink" href="#" dowload>Получить pdf файл</a>
 							</div>
 							<div class="materials-block-items__item">
 								<div class="page__text_small">Учёт гостей и расчёт <br>напитков</div>
-								<div class="page__text_very-small">Сколько нужно алкоголя и напитков именно для ваших гостей</div>
-								<div class="page__text_very-small_pink">Получить pdf файл</div>
+								<div class="page__text_very-small">Сколько нужно алкоголя и напитков именно для ваших гостей</div><a class="page__text_very-small_pink" href="#" dowload>Получить pdf файл</a>
 							</div>
 							<div class="materials-block-items__item">
 								<div class="page__text_small">Тайминг рекомендации</div>
-								<div class="page__text_very-small">Как успеть всё в свадебный день и чувствовать себя отдохнувшими</div>
-								<div class="page__text_very-small_pink">Получить pdf файл</div>
+								<div class="page__text_very-small">Как успеть всё в свадебный день и чувствовать себя отдохнувшими</div><a class="page__text_very-small_pink" href="#" dowload>Получить pdf файл</a>
 							</div>
 							<div class="materials-block-items__item">
 								<div class="page__text_small">Что не забыть в день свадьбы</div>
-								<div class="page__text_very-small">Списки необходимого для жениха и невесты на каждом этапе свадебного дня</div>
-								<div class="page__text_very-small_pink">Получить pdf файл</div>
+								<div class="page__text_very-small">Списки необходимого для жениха и невесты на каждом этапе свадебного дня</div><a class="page__text_very-small_pink" href="#" dowload>Получить pdf файл</a>
 							</div>
 							<div class="materials-block-items__item">
 								<div class="page__text_small">12 лайфхаков для свадьбы</div>
-								<div class="page__text_very-small">Маленькие и полезные советы по организации свадьбы</div>
-								<div class="page__text_very-small_pink">Получить pdf файл</div>
+								<div class="page__text_very-small">Маленькие и полезные советы по организации свадьбы</div><a class="page__text_very-small_pink" href="#" dowload>Получить pdf файл</a>
 							</div>
 						</div>
 					</div>
@@ -500,11 +482,11 @@
 							<div class="page__img"><img src="assets/img/img-logo-nav.png"></div>
 							<div class="page__text_very-small">Агентство по организации свадеб под ключ с опытом работы более 10 лет</div>
 						</div>
-						<div class="footer-block-soc-call">
-							<div class="header-block__soc-whatsapp"></div>
-							<div class="header-block__soc-vk"></div>
-							<div class="header-block__soc-instagram"></div>
-							<button class="page__btn-call">перезвоните мне</button>
+						<div class="footer-block__soc"><a class="header-block__soc-whatsapp" href="#"></a><a class="header-block__soc-vk" href="#"></a><a class="header-block__soc-instagram" href="#"></a></div>
+						<div class="footer-block__call">
+							<button class="page__btn page__btn-call">перезвоните мне
+								<div class="page__btn-call_tel"></div>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -516,7 +498,7 @@
 					</div>
 					<div class="modal__content">
 						<div class="modal__content-block">
-							<video class="page__video" poster="assets/img/img-modal-testimonial.png" src=""></video>
+							<iframe class="page__video" src="https://www.youtube.com/embed/n-M2R28lw88" frameborder="0" allowfullscreen> </iframe>
 						</div>
 					</div>
 				</div>
@@ -525,6 +507,8 @@
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/scroll-anchors.js"></script>
+		<script src="js/store-scroll.js"></script>
 		<script src="js/modal.js"></script>
+		<script src="js/animations.js"></script>
 	</body>
 </html>
