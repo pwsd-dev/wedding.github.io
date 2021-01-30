@@ -35,6 +35,15 @@
             opacity: 0.4;  
             background: linear-gradient(0deg, #FEE2D9 0%, rgba(254, 226, 217, 0) 100%);
         }
+        &.animated{
+            .from(@break_mmd, {
+                .page__title-h2{
+                    .animated({
+                        .fadeIn();
+                    });
+                }
+            });
+        }
     }
     &-block {
         position: relative;
@@ -174,5 +183,14 @@
                 transform: rotate(180deg);
             }
         }
+    }
+    &.animated{
+        .from(@break_mmd, {
+            .slider-feedback-block__slider{
+                .animated({
+                    .scale();
+                });
+            }
+        });
     }
 }

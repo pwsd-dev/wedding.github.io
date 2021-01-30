@@ -48,6 +48,11 @@
             .sm-block({
                 padding: 0 ;
              });
+             transition: all 0.5s ease-out;
+            .from(@break_mmd, {
+                opacity: 0;
+            });
+            
             &-content{
                 .size(4.5);
                 .size-sm(12);
@@ -225,5 +230,26 @@
                  });
             }
         }
+    }
+    &.animated{
+        .from(@break_mmd, {
+       
+            .page__title-h2,
+            .page__text_small{
+                .animated({
+                    .fadeInUp();
+                },1.5s);
+            }
+            .page__text_small{
+                .delay(0.3s);
+            }
+            .projects-block__slider{
+                .animated({
+                    opacity: 1;
+                    .scale();
+                    .delay(.7s);
+                });
+            }
+        });
     }
 }

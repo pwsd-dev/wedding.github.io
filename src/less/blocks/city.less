@@ -75,5 +75,24 @@
             }
         }
     }
-    
+    &.animated{
+        .from(@break_mmd, {
+            .page__title-h2,
+            .page__text_small,
+            .city-block-img{
+                .animated({
+                    .fadeIn();
+                });
+            }
+            .page__title-h2{
+                .delay(.2s);
+            }
+            .page__text_small{
+                .delay(.4s);
+            }
+            .city-block-img{
+                .delay(.6s);
+            }
+        });
+    }
 }

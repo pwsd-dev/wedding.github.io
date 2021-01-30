@@ -79,4 +79,13 @@
             }
         }
     }
+    &.animated{
+        .from(@break_mmd, {
+            .basis-block{
+                .animated({
+                    .fadeInUp();
+                });
+            }
+        });
+    }
 }

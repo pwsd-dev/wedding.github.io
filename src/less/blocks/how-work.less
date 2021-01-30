@@ -37,4 +37,20 @@
             // margin-bottom: 84px;
         }
     }
+    &.animated{
+        .from(@break_mmd, {
+       
+            .page__title-h2,
+            .page__text_small{
+                .animated({
+                    .fadeInUp();
+                   
+                },1.5s);
+            }
+            .page__text_small{
+                .delay(0.3s);
+            }
+        });
+        
+    }
 }

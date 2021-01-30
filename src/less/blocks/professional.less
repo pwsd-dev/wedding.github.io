@@ -167,4 +167,27 @@
             }
         }
     }
+    &.animated{
+        .from(@break_mmd, {
+            .page__title-h2,
+            .page__text_small-pink,
+            .page__text_very-small,
+            .professional-block-img-center,
+            .professional-block-description-right{
+                .animated({
+                    .fadeIn();
+                });
+            }
+            .page__title-h2,
+            .page__text_small-pink{
+                .delay(.2s);
+            }
+            .professional-block-img-center{
+                .delay(.4s);
+            }
+            .professional-block-description-right{
+                .delay(.7s);
+            }
+        });
+    }
 }

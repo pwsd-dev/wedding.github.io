@@ -119,4 +119,14 @@
             }
         }
     }
+    &.animated{
+        .from(@break_mmd, {
+            .form-block{
+                .animated({
+                    .scale();
+                    .delay(.3s);
+                });
+            }
+        });
+    }
 }

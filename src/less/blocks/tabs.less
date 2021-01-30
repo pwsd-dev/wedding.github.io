@@ -166,4 +166,30 @@
             }
         }
     }
+    &.animated{
+        .from(@break_mmd, {
+            .tabs-block-item{
+                .animated({
+                    .zoomIn();
+                },1.5s);
+                &:nth-child(2){
+                    .delay(.3s);
+                }
+                &:nth-child(3){
+                    .delay(.6s);
+                }
+                &:nth-child(4){
+                    .delay(.9s);
+                }
+                .page__text{
+                    .animated({
+                        .fadeInUp();
+                        .delay(.9s);
+                    },1.5s);
+                }
+            }
+           
+        });
+        
+    }
 }

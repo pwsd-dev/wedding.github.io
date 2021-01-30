@@ -7,6 +7,7 @@
     .sm-block({
         margin-top: 32%;
      });
+     
     &_bg{
         height: 380px;
         width: 100%;
@@ -22,6 +23,10 @@
     &-block {
         display: flex;
         justify-content: center;
+        transition: all 0.5s ease-out;
+        .from(@break_mmd, {
+            opacity: 0;
+        });
         .page__video{
             position: relative;
             //margin: 0 auto;
@@ -37,6 +42,19 @@
         
             });
         }
+    }
+
+    &.animated{
+        .from(@break_mmd, {
+            .video-block{
+                .animated({
+                    opacity: 1;
+                    .scale();
+                    .delay(.5s);
+                });
+            }
+        });
+        
     }
     
 }

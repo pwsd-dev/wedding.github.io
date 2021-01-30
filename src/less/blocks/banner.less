@@ -108,12 +108,24 @@
         .from(@break_mmd, {
             .animated({
                 .scale()
-            },1s);
-            .banner-block__description{
+            });
+            .page__title-h2,
+            .page__text,
+            .page__btn.page__btn_arrow,
+            .page__text_very-small{
                 .animated({
-                    .fadeIn();
-                    .delay(1s);
-                });
+                    .fadeInUp();
+                   
+                },1.5s);
+            }
+            .page__text{
+                .delay(0.3s);
+            }
+            .page__btn.page__btn_arrow{
+                .delay(0.6s);
+            }
+            .page__text_very-small{
+                .delay(0.8s);
             }
         });
         

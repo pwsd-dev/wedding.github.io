@@ -94,4 +94,28 @@
 
         }
     }
+    &.animated{
+        .from(@break_mmd, {
+            .page__title-h2,
+            .ten-professionals-block-items,
+            .page__text_small-italic,
+            .ten-professionals-block__img{
+                .animated({
+                    .fadeIn();
+                });
+            }
+            .page__title-h2{
+                .delay(.2s);
+            }
+            .ten-professionals-block-items{
+                .delay(.4s);
+            }
+            .page__text_small-italic{
+                .delay(.6s);
+            }
+            .ten-professionals-block__img{
+                .delay(.8s);
+            }
+        });
+    }
 }
