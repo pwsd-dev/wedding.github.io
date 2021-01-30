@@ -12,23 +12,19 @@
         background: linear-gradient(0deg, #FEE2D9 0%, rgba(254, 226, 217, 0) 100%);
         opacity: 0.2;
     }
-    .sm-block({
-                
+    .mmd-block({
         padding-top: 20px;
-        
     });
     &-block {
         .row-flex();
         &-description {
             .col();
             .size(6.5);
-            .size-sm(12);
+            .size-mmd(12);
             .page__title-h2 {
                 margin-bottom: 33px;
-                .sm-block({
-                    padding-left: 20px;
+                .mmd-block({
                     font-size: 25px;
-                    margin-bottom: 0;
                 });
             }
             .page__text_small {
@@ -37,6 +33,11 @@
                 box-sizing: border-box;
                 font-size: 16px;
                 line-height: 20px;
+                .mmd-block({
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                });
             }
             
         }
@@ -47,6 +48,9 @@
             .size-sm(12);
             padding-top: 72px;
             padding-left: 30px;
+            .mmd-block({
+                padding-left:0px;
+            });
             .page__img{
                 position: relative;
                 &::before,

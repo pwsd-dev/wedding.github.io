@@ -1,5 +1,9 @@
 .basis {
     background-image: url(../assets/img/img-bg-basis.png);
+    .xs-block({
+        background-size: cover;
+        background-image: url(../assets/img/img-bg-basis-mob.png);
+    });
     background-repeat: no-repeat;
     //overflow: hidden;
     
@@ -53,10 +57,18 @@
                 .sm-block({
                     margin-bottom: 32px;
                 });
+                &__img{
+                    .mmd-block({
+                        flex-basis: 21%;
+                    });
+                }
                 &__description{
                     padding-left: 21px;
                     padding-top: 10px;
-
+                    .mmd-block({
+                        padding-top: 0px;
+                        .size(9);
+                    });
                     .page__text_very-small{
                         font-weight: bold;
                         font-size: 16px;

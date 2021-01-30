@@ -2,6 +2,10 @@
     overflow: hidden;
     padding-top: 30px;
     padding-bottom: 90px;
+    .mmd-block({
+        padding-top: 0px;
+        padding-bottom: 50px;
+    });
     .wrapper {
         overflow: hidden;
         max-width: 1280px;
@@ -25,12 +29,19 @@
             line-height: 67px;
             margin-top: 10px;
             margin-bottom: 25px;
-            .sm-block({
+            .mmd-block({
+                .size(10);
+                margin: 0 auto 25px;
                 font-size: 25px;
-        
-             });
+                line-height: 34px;
+            });
         }
-
+        .page__text_small {
+            margin-bottom: 40px;
+            .mmd-block({
+                margin-bottom: 20px;
+            });
+        }
         &__slider {
             position: relative;
             padding: 0 40px;
@@ -158,9 +169,7 @@
             
         }
 
-        .page__text_small {
-            margin-bottom: 40px;
-        }
+       
 
         .projects-btns {
             

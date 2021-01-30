@@ -10,16 +10,19 @@
         background-color: #fee2d9;
         opacity: 0.4;
         
-        .sm-block({
+        .mmd-block({
             width: 100%;
+            background: linear-gradient(0deg, #FEE2D9 0%, rgba(254, 226, 217, 0) 100%);
         });
     }
     &-block {
-        padding-top: 95px;
+      
 
         padding-bottom: 50px;
         .row-flex();
-       
+        .mmd-block({
+            padding-top: 0px;
+        });
         &-description-profile {
             .size(6);
             .size-sm(12);
@@ -57,9 +60,10 @@
                 font-size: 50px;
                 line-height: 60px;
                 margin-bottom: 50px;
-                .sm-block({
+                .mmd-block({
                     font-size: 25px;
-                    
+                    line-height: 34px;
+                    margin-bottom: 20px;
                 });
                 position: relative;
                
@@ -73,9 +77,9 @@
                 font-size: 20px;
                 line-height: 24px;
                 letter-spacing: 0.02em;
-                .sm-block({
+                .mmd-block({
                     text-transform: uppercase;
-                    
+                    .size(8);
                 });
             }
 
@@ -84,17 +88,26 @@
                 font-size: 16px;
                 line-height: 20px;
                 font-weight: 600;
-                .size(14);
-                .sm-block({
+                .mmd-block({
                     .size(7);
-                    margin-bottom: 30px;
+                    margin-bottom: 0px;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
                 });
             }
         }
 
         &-img-center {
             .size(3);
+            .size-mmd(6);
             .shift-left(-1.8);
+            .mmd-block({
+                .shift-left(0);
+                position: absolute;
+                right: 8px;
+                top: 9%;
+            });
             position: relative;
             .page__img {
                 // .sm-block({
@@ -111,11 +124,14 @@
 
         &-description-right {
             .size(5);
-            .size-sm(12);
+            .size-md(12);
             // .shift-right(-2);
             padding-left: 10%;
             padding-top: 43px;
             box-sizing: border-box;
+            .mmd-block({
+                padding-top: 26%;
+            });
             .page__text_small-pink {
 
                 font-family: "@{Montserrat}-Regular";
@@ -145,7 +161,9 @@
                 margin-bottom: 26px;
                 font-size: 16px;
                 line-height: 20px;
-                
+                .mmd-block({
+                    margin-bottom: 50px;
+                });
             }
         }
     }

@@ -26,19 +26,16 @@
 
         &-items {
             .row-flex();
-            .sm-block({
-                flex-direction: column;
-                
-            });
             &-item {
                 .col();
                 .size(4);
+                .size-mmd(6);
+                .size-xs(12);
                 position: relative;
                 background-color: @color_light-pink;
                 border-radius: 15px;
                 margin-bottom: 18px;
-                .sm-block({
-                    .size(12);
+                .mmd-block({
                     margin-bottom: 20px;
                 });
                 min-height: 374px;

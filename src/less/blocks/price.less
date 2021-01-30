@@ -1,11 +1,11 @@
 .price {
-    // background-image: url(../assets/img/img-bg-price.png);
     padding-top: 60px;
     padding-bottom: 80px;
     position: relative;
-    .sm-block({
+    overflow: hidden;
+    .mmd-block({
         padding-top:0px;
-        
+        background-color: @color_light-pink;
     });
     &_bg{
         position: absolute;
@@ -15,24 +15,15 @@
         background-color: @color_light-pink;
         opacity: 0.4;
     }
-    overflow: hidden;
-    .sm-block({
-       background-image: none;
-       background-color: @color_light-pink;
-       padding-top: 60px;
-       padding-bottom: 50px;
-    });
+    
     &-block {
         .row-flex();
-        &__bg {
-            background-color: rebeccapurple;
-        }
         &-img {
             position: relative;
             z-index: 10;
-            .sm-block({
+            .mmd-block({
                 order: 1;
-                padding-top: 60px;
+                padding-top: 20px;
             });
         }
 
@@ -40,7 +31,7 @@
             .size(8);
             .shift-left(-1.8);
             .shift-right(-3);
-            .sm-block({
+            .mmd-block({
                 order: 0;
                 .size(12);
                 .shift-left(0);
@@ -75,18 +66,12 @@
                 top: 38%;
                 left: 72%;
             }
-            .page__img {
-                .sm-block({
-                    padding-left: 15px;
-                });
-            }
             .page__title-h2 {
                 padding-bottom: 30px;
-                .sm-block({
+                .md-block({
                     .size(11);
                     font-size: 25px;
-                    margin: 0 auto;
-                    
+                    text-align: left;
                 });
             }
 
@@ -95,6 +80,9 @@
                 font-family: "@{Montserrat}-Regular";
                 font-size: 16px;
                 line-height: 20px;
+                .md-block({
+                    text-align: left;
+                });
                 &_after {
                     padding-left: 40px;
                     padding-top: 15px;
@@ -102,16 +90,19 @@
                     font-size: 13px;
                     line-height: 16px;
                     color: #575757;
+                    .mmd-block({
+                        padding-left: 0px;
+                    });
                 }
             }
 
             .page__btn {
                 .size(4.5);
-                .size-sm(12);
-               
-                .sm-block({
-                    box-sizing: border-box;
+                .size-mmd(12);
+                
+                .mmd-block({
                     margin: 0 auto;
+                    box-sizing: border-box
                 });
             }
         }

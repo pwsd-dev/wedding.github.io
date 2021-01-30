@@ -7,32 +7,35 @@
     z-index: 100;
     // background-color: #ffffff;
     background-color: transparent;
+    transition: all .5s ease-out;
     &-block {
         .row-flex();
         align-items: center;
+        .mmd-block({
+            justify-content: space-between;
+        });
+     
         // flex-wrap: nowrap;
         // justify-content: space-between;
         
         &__logo {
             .col();
             .size(1.7);
-            .sm-block({
-                .size(12);
-                flex-wrap: nowrap;
-                .shift-left(.5);
-            });
+            .size-mmd(8);
+            .size-sm(6);
         }
         
         &-links {
             .col();
             .size(6);
+            .sm-block({
+                display: none;
+            });
             margin-right: 0;
             font-family: "@{Montserrat}-Regular";
             font-size: 15px;
             color: #4d4d4d;
-            .sm-block({
-                display: none;
-            });
+           
             .page__link{
                 // padding-right: 33px;
                 padding-right: 5.5%;
@@ -49,6 +52,7 @@
         &__soc {
             .col();
             .size(1.7);
+           
             margin-left: 0;
             display: flex;
             justify-content: space-around;
@@ -84,8 +88,11 @@
             
             .col();
             .size(3);
+            .size-mmd(4);
+            .size-sm(6);
             display: flex;
             justify-content: center;
+            align-items: center;
             margin-right: 0;
             .sm-block({
                 //display: flex;
@@ -96,8 +103,30 @@
                 .sm-block({
                     display: none;
                 });
+                &_mob{
+                    display: none;
+                    padding: 0;
+                    .sprite(@icon-call-tel);
+                    .sm-block({
+                        display: inline-block;
+                    });
+                }
             }
         }
-
+        &__menu{
+            display: none;
+            margin-left: 15%;
+            text-align: center;
+            .sm-block({
+                display: inline-block;
+            });
+            &-icon{
+                border: 0;
+                background-color: transparent;
+                .sprite(@icon-menu);
+            }
+           
+           
+        }
     }
 }

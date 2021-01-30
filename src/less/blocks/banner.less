@@ -11,81 +11,35 @@
     }
     .sm-block({
         padding-bottom: 0;
-         
      });
     &-block {
         .row-flex();
         position: relative;
-        // flex-wrap: nowrap;
-        .sm-block({
-           flex-direction: column;
-            
-        });
         &__description {
             .col();
             .size(6);
+            .size-sm(12);
             padding-top: 60px;
-            .page__img_rose {
-                .sm-block({
-                    .shift-left(9);
-                    padding-top: 0;
-                 });
-            }
-            .sm-block({
-                flex-direction: column;
-                 
-             });
-           //.size(6);
-            .page__title-h1 {
-                
-                width: 30px;
-                padding-bottom: 30px;
-            }
-
-            .page__title-h2 {
-                .sm-block({
-                    font-size: 25px;
-                    line-height: 25px;
-                    .size(24);
-                    font-family: "@{pala}-Regular";
-                    text-align: center;
-                    .shift-left(1);
-                    
-                });
-            }
-
-            .page__title-h2-tel {
-                .sm-block({
-                    //.shift-left(1);
-                    
-                    
-                    
-                });
-            }
-
+            .mmd-block({
+                text-align: center;
+            });
             .page__text {
                 .size(8.5);
+                .size-mmd(12);
                 padding: 30px 0;
-                .sm-block({
-                    .shift-left(1);
-                    text-align: center;
-                    margin-top: 20px;
-                    .size(24);
+                .mmd-block({
+                    font-size: 15px;
+                    line-height: 18px;
+                    margin: 0 auto;
                 });
             }
-
             .page__btn {
-                // .size(4.5);
+                .size-mmd(12);
                 display: inline-flex;
-              
-                .sm-block({
-                    .shift-left(1);
-                    .size(24);
-                    margin-bottom: 15px;
-                });
             }
-
             .page__text_very-small {
+                .size(5.7);
+                .size-mmd(12);
                 display: inline-flex;
                 position: relative;
                 color: #000;
@@ -94,7 +48,11 @@
                 font-size: 16px;
                 line-height: 20px;
                 bottom: 19px;
-                .size(5.7);
+                .mmd-block({
+                    bottom: 0;
+                    text-align: left;
+                    margin-top: 10%;
+                });
                 &::after{
                     content: "";
                     position: absolute;
@@ -107,36 +65,14 @@
                     background-image: url('../assets/img/img-strelka-banner.png');
                     .sm-block({
                         transform: rotate(78deg);
-                        bottom: -108px;
-                        left: -155px;
+                        bottom: -100px;
+                        left: -170px;
                      });
                     
                 }
-                .sm-block({
-                    .shift-left(3);
-                    .size(24);
-                    //text-align: center;
-                    top: 0;
-                    left: 0;
-                    margin-top: 10px;
-                });
-                
-                
             }
+           
 
-            .page__img {
-                position: relative;
-                top: -44px;
-                left: 196px;
-                .sm-block({
-                    top: 0;
-                    left: 0;
-                    transform: rotate(70deg);
-                    top: 106px;
-                    left: -63px;
-                    //transform: translateX(50px);
-                });
-            }
         }
 
         &__img {
@@ -147,9 +83,10 @@
             left: -101px;
             top: -25px;
             .sm-block({
+                .size(12);
                 .shift-right(0);
                 left: 30px;
-                .size(12);
+               
                 top: 0;
             });
         }
@@ -159,17 +96,26 @@
         font-size: 61px;
         line-height: 76px;
         .size(10);
+        .size-mmd(12);
+        .mmd-block({
+            font-size: 25px;
+            line-height: 33px;
+            text-align: center;
+            margin: 0 auto;
+        });
     }
     &.animated{
-      
-        .animated({
-            .scale()
-        },1s);
-        .banner-block__description{
+        .from(@break_mmd, {
             .animated({
-                .fadeIn();
-                .delay(1s);
-            });
-        }
+                .scale()
+            },1s);
+            .banner-block__description{
+                .animated({
+                    .fadeIn();
+                    .delay(1s);
+                });
+            }
+        });
+        
     }
 }
