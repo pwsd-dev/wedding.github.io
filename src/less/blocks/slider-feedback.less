@@ -43,6 +43,7 @@
         &__slider {
             .col();
             .size(11);
+            .size-sm(12);
             margin: 0 auto;
             margin-left: 7%;
             background-color: @color_white;
@@ -67,9 +68,14 @@
                 flex-wrap: wrap;
                
                 padding: 0 90px;
-
+                .sm-block({
+                    padding: 0px;
+                    justify-content: center;
+                    text-align: center;
+                });
                 .page__img{
                     .size(5.5);
+                    .size-sm(12);
                     position: relative;
                     z-index: 10;
                     .page__icon{
@@ -82,7 +88,9 @@
                 }
                 .page__description{
                     .size(6);
+                    .size-sm(12);
                     .shift-padding-left(1);
+                    .shift-sm-padding-left(0);
                     padding-top: 5%;
                     .name{
                         font-size: 20px;
@@ -128,10 +136,19 @@
             }
             &_prev{
                 left: 8px;
+                .sm-block({
+                    top: 37%;
+                });
             }
             &_next{
                 right: 8px;
                 top: 43%;
+
+                .sm-block({
+                    top: 32%;
+                });
+    
+
                 transform: rotate(180deg);
             }
         }

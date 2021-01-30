@@ -34,12 +34,19 @@
         &__slider {
             position: relative;
             padding: 0 40px;
+            .sm-block({
+                padding: 0 ;
+             });
             &-content{
                 .size(4.5);
+                .size-sm(12);
                 margin: 0 auto;
                 padding-left: 3%;
                 .tns-ovh {
                     overflow: inherit;
+                    .sm-block({
+                        overflow: hidden;
+                     });
                 }
                 .page__items{
                     .row-flex();
@@ -74,6 +81,11 @@
                             transform: scale(1);
                             top: 15px;
                             right: 18px;
+                            .sm-block({
+                                transform: scale(.8);
+                                top: 10px;
+                                right: 2px;
+                             });
                         }
                         + .page__item {
                             .page__img{
@@ -122,6 +134,9 @@
                         width: 100%;
                         text-align: center;
                         font-weight: bold;
+                        .sm-block({
+                            margin-top: 5%;
+                         });
                     }
                     .page__toggles{
                         transition: all .5s ease-out;
@@ -153,11 +168,11 @@
         }
         .projects-btn{
             position: absolute;
-        top: 45%;
-        transform: translateY(-50%);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+            top: 45%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
         
             width: 56px;
             height: 56px;
@@ -180,6 +195,12 @@
                 // position: relative;
                 left: -10px;
                 top: 46%;
+                .sm-block({
+                    left: 12px;
+                    top: auto;
+                    bottom: 25px;
+                    transform: scale(.9);
+                 });
             }
             &_next{
                 // position: relative;
@@ -187,6 +208,12 @@
                 top: 39%;
 
                 transform: rotate(180deg);
+                .sm-block({
+                    right: 12px;
+                    top: auto;
+                    bottom: 25px;
+                    transform: rotate(180deg) scale(.9);
+                 });
             }
         }
     }

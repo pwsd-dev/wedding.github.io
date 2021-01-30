@@ -4,26 +4,43 @@
         .row-flex();
         &-logo-descr {
             .size(7.3);
+            .size-sm(12);
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
+
             .page__text_very-small {
                margin-left: 3%;
                .size(7);
+               .size-sm(12);
             }
+            .sm-block({
+                .page__img{
+                    margin: 0 auto;
+                }
+                .page__text_very-small {
+                    text-align: center;
+                }
+            });
         }
 
         &__soc {
             .col();
             .size(1.7);
+            .size-sm(12);
             display: flex;
             align-items: center;
             justify-content: space-around;
-
             .sm-block({
-                display: none;
+                justify-content: center;
+                margin: 7% auto;
             });
+          
             &-icon{
-                // margin: 0 15px;
+               
+                .sm-block({
+                    margin: 0 15px;
+                });
             }
             
             &-whatsapp {
@@ -49,13 +66,12 @@
         &__call{
             .col();
             .size(3);
+            .size-sm(12);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 0;
-            .sm-block({
-                //display: flex;
-            });
+           
 
             .page__btn-call {
                 color: @color_white;
@@ -72,9 +88,7 @@
                     }
                 }
                 margin: 0;
-                .sm-block({
-                    display: none;
-                });
+               
             }
         }
     }
