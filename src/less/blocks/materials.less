@@ -13,6 +13,8 @@
         .page__title-h2 {
             margin: 0 auto;
             .size(9);
+            .size-xs(12);
+            .size-xxs(12);
             text-align: center;
             margin-top: 8px;
             margin-bottom: 50px;
@@ -30,9 +32,17 @@
                 .col();
                 .size(4);
                 .size-mmd(12);
+                .size-xxs(12);
+
+
                 .mmd-block({
                     margin-bottom: 9%;
                 });
+                .xs-block({
+                    padding:10% 5%; 
+                });
+                display: flex;
+                flex-wrap: wrap;
                 background-color: #fff9f7;
                 margin-bottom: 9%;
                 margin-bottom: 2%;
@@ -62,6 +72,7 @@
                     text-decoration: underline;
                     position: relative;
                     margin-left: 40px;
+                    align-self: flex-end;
                     
                     
                     &::before {

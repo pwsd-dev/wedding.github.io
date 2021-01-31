@@ -1,0 +1,16 @@
+mixin item(name)
+    .page__item
+        
+            .page__toggles
+                button.page__icon.page__icon_photograph.open-modal(data-modal="modal-projects")
+                button.page__icon.page__icon_videocamera.open-modal(data-modal="modal-projects")
+            .page__text.name Антон и Юлия
+
+section#modal-projects.modal.modal-projects.page_hidden
+        .modal-container
+                .modal__action
+                    button.page__btn.page__btn_close.close-modal(data-modal="modal-projects")
+                .modal__content
+                    .modal__content-block
+                        .page__img 
+                            img(src="assets/img/img-video-1.png")

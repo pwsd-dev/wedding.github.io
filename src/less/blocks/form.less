@@ -121,11 +121,14 @@
     }
     &.animated{
         .from(@break_mmd, {
-            .form-block{
+            .form-block-img,
+            .form-block-form{
                 .animated({
-                    .scale();
-                    .delay(.3s);
+                    .fadeIn();
                 });
+            }
+            .form-block-form{
+                .delay(.3s);
             }
         });
     }

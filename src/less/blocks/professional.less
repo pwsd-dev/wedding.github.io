@@ -1,6 +1,10 @@
 .professional {
     overflow: hidden;
     position: relative;
+    padding-top: 7%;
+    .xs-block({
+        padding-top: 0;
+    });
     &_bg{
         position: absolute;
         top: 0;
@@ -23,9 +27,14 @@
         .mmd-block({
             padding-top: 0px;
         });
+        .sm-block({
+            justify-content: center;
+        });
         &-description-profile {
             .size(6);
             .size-sm(12);
+            .size-xxs(12);
+            
             align-self: flex-start;
             padding: 6% 8% 4% 3%;
             box-sizing: border-box;
@@ -95,18 +104,22 @@
                     font-size: 15px;
                     line-height: 18px;
                 });
+                .size-xxs(10);
             }
         }
 
         &-img-center {
             .size(3);
-            .size-mmd(6);
+            .size-mmd(5);
             .shift-left(-1.8);
             .mmd-block({
                 .shift-left(0);
                 position: absolute;
                 right: 8px;
                 top: 9%;
+            });
+            .xxs-block({
+                top: 10%;
             });
             position: relative;
             .page__img {
@@ -125,16 +138,20 @@
         &-description-right {
             .size(5);
             .size-md(12);
+            .size-md(12);
             // .shift-right(-2);
             padding-left: 10%;
             padding-top: 43px;
             box-sizing: border-box;
             .mmd-block({
-                padding-top: 26%;
+                padding-top: 15%;
+            });
+            .xxs-block({
+                padding-top: 18%;
             });
             .page__text_small-pink {
 
-                font-family: "@{Montserrat}-Regular";
+                font-family: "@{pala}";
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
@@ -159,8 +176,8 @@
             .page__text_very-small {
                 font-family: "@{Montserrat}-Regular";
                 margin-bottom: 26px;
-                font-size: 16px;
-                line-height: 20px;
+                font-size: 14px;
+                line-height: 18px;
                 .mmd-block({
                     margin-bottom: 50px;
                 });

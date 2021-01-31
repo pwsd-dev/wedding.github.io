@@ -21,11 +21,10 @@ module.exports = {
             width: "576px"
         },
         xxs: {
-            width: "420px",
-            /*
+            width: "350px",
             offset: "10px",
             fields: "5px"
-            */
+            
         }
 	},
     //detailedCalc: true

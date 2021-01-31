@@ -29,12 +29,15 @@
             line-height: 67px;
             margin-top: 10px;
             margin-bottom: 25px;
+           
             .mmd-block({
                 .size(10);
                 margin: 0 auto 25px;
                 font-size: 25px;
                 line-height: 34px;
             });
+            .size-sm(12);
+            .size-xxs(12);
         }
         .page__text_small {
             margin-bottom: 40px;
@@ -151,8 +154,11 @@
                         text-align: center;
                         font-weight: bold;
                         .sm-block({
-                            margin-top: 5%;
+                            margin-top: 10%;
+                            font-size: 15px;
+                            line-height: 18px;
                          });
+                        
                     }
                     .page__toggles{
                         transition: all .5s ease-out;
@@ -196,6 +202,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            .sm-block({
+                background-color: #fff9f7;
+            });
             &_prev,
             &_next{
                 &::after{
@@ -212,7 +221,7 @@
                 .sm-block({
                     left: 12px;
                     top: auto;
-                    bottom: 25px;
+                    bottom: 35px;
                     transform: scale(.9);
                  });
             }
@@ -225,7 +234,7 @@
                 .sm-block({
                     right: 12px;
                     top: auto;
-                    bottom: 25px;
+                    bottom: 35px;
                     transform: rotate(180deg) scale(.9);
                  });
             }

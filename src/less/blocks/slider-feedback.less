@@ -8,6 +8,9 @@
         width: 100%;
         position: absolute;
         top: 0;
+        .mmd-block({
+            top: 15%;
+        });
     }
     &-title{
         height: 320px;
@@ -49,7 +52,7 @@
         position: relative;
         top: -85px;
         .mmd-block({
-            top: -170px;
+            top: -100px;
         });
         .page__img_rose {
             position: relative;
@@ -60,6 +63,7 @@
             .col();
             .size(11);
             .size-mmd(12);
+            .size-xxs(12);
             margin: 0 auto;
             margin-left: 7%;
             .mmd-block({
@@ -130,6 +134,10 @@
                     .description{
                         font-size: 16px;
                         line-height: 20px;
+                        .mmd-block({
+                            text-align: left;
+                            padding-left: 2%;
+                        });
                     }
                 }
             }  
@@ -168,7 +176,10 @@
             &_prev{
                 left: 8px;
                 .sm-block({
-                    top: 37%;
+                    top: 35%;
+                });
+                .xxs-block({
+                    top: 28.5%;
                 });
             }
             &_next{
@@ -176,9 +187,11 @@
                 top: 43%;
 
                 .sm-block({
-                    top: 32%;
+                    top: 30%;
                 });
-    
+                .xxs-block({
+                    top: 24%;
+                });
 
                 transform: rotate(180deg);
             }

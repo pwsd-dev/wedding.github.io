@@ -34,13 +34,16 @@
             .size(8);
             .shift-left(-1.8);
             .shift-right(-3);
+            .size-mmd(12);
+            .size-xxs(12);
             .mmd-block({
                 order: 0;
-                .size(12);
+                
                 .shift-left(0);
                 .shift-right(0);
                 padding-left: 5%;
                 text-align: center;
+                padding: 5%;
             });
             margin-top: 45px;
             padding: 5% 3% 5% 19%;
@@ -102,10 +105,13 @@
             .page__btn {
                 // .size(4.5);
                 .size-mmd(12);
-                
+                .size-xxs(12);
                 .mmd-block({
                     margin: 0 auto;
                     box-sizing: border-box
+                });
+                .xxs-block({
+                    padding: 0;
                 });
             }
         }
