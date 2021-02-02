@@ -590,6 +590,8 @@ html:not([data-scroll='0']) .header {
 }
 
 .header-block {
+  position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
@@ -723,6 +725,91 @@ html:not([data-scroll='0']) .header {
   background-position: -148px -158px;
   width: 28px;
   height: 19px;
+}
+
+.header-menu {
+  width: 100%;
+  height: 0;
+  background: #fff;
+  margin-top: -70px;
+  padding-top: 70px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  position: relative;
+}
+
+.header-menu.open {
+  height: 100vh;
+}
+
+.header-menu .right,
+.header-menu .left-top,
+.header-menu .left-bottom {
+  position: absolute;
+}
+
+.header-menu .right {
+  top: 20%;
+  right: 0;
+}
+
+.header-menu .left-top {
+  top: 15%;
+  left: 0;
+}
+
+.header-menu .left-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.header-menu .page__img {
+  border-top: 2px solid #fee2d9;
+  width: 100%;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.header-menu .header-block-links {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.header-menu .header-block-links .page__link {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 22px;
+  width: 100%;
+  text-align: center;
+}
+
+.header-menu .page__btn.page__btn-call {
+  align-self: flex-end;
+}
+
+.header-menu .header-block__soc {
+  display: -webkit-box;
+  display: flex;
+  align-self: center;
+  width: 100%;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.header-menu .header-block__soc .header-block__soc-icon {
+  margin: 0 10px;
 }
 
 .banner {
@@ -2506,6 +2593,16 @@ html:not([data-scroll='0']) .header {
   height: 592px;
   width: 100%;
   max-width: 1000px;
+}
+
+.modal {
+  background: #fff;
+}
+
+.modal__action .page__btn_close::before,
+.modal__action .page__btn_close::after {
+  content: "";
+  background: #000;
 }
 
 @media screen and (min-width: 992px) {

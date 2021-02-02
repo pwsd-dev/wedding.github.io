@@ -35,3 +35,15 @@ if(strs){
     str.innerHTML = str.innerHTML.replace(/(^ ?|<br> ?|[!?.] .*?)([\wа-яё]+)/gim, '$1<span class="hl">$2</span>');
   });
 }
+
+let headerMenu = document.querySelector('.header-menu');
+let headerMenuBtn = document.querySelector('.header-block__menu-icon');
+let pageLinks = document.querySelectorAll('.page__link');
+headerMenuBtn.addEventListener('click', ()=>{
+  headerMenu.classList.toggle('open')
+});
+pageLinks.forEach((link)=>{
+  link.addEventListener('click', ()=>{
+    headerMenu.classList.toggle('open')
+  });
+});
